@@ -21,7 +21,7 @@
 /* BiroScriptUSPlus-Bold */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "BiroScript";
+  font-family: "BiroScriptUS";
   font-style: normal;
   font-weight: 700;
   src: url("../assets/fonts/BiroScriptUSPlus-Bold.eot"); /* IE9 Compat Modes */

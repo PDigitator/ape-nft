@@ -1,5 +1,5 @@
-@import-normalize;
-@import './typography.css';
+@import "../../node_modules/normalize.css/normalize.css";
+@import "./typography.css";
 
 html {
   box-sizing: border-box;
@@ -15,10 +15,10 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Manrope', 'Montserrat', -apple-system, BlinkMacSystemFont,
-    Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  color: #121417;
-  background-color: #f7f7fb;
+  font-family: "Manrope", "Montserrat", -apple-system, BlinkMacSystemFont,
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #fff;
+  background-color: #181818;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
