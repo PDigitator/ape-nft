@@ -16,10 +16,10 @@ export const staticTheme = {
   },
 
   fonts: {
-    fontTitle: "RightGrotesk",
-    fontPrimary: "MessinaSansMono",
-    fontSecondary: "BiroScriptUS",
-    fontAccent: "BiroScript",
+    fontTitle: "Right Grotesk",
+    fontPrimary: "Messina Sans Mono",
+    fontSecondary: "Biro Script Plus US",
+    fontAccent: "Biro Script Plus",
   },
 
   breakpoints: {

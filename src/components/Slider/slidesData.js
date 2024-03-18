@@ -1,3 +1,4 @@
+import { nanoid } from "nanoid";
 import slide01 from "../../assets/images/slider-img/ape-slider-01@1x.jpg";
 import slide02 from "../../assets/images/slider-img/ape-slider-02@1x.jpg";
 import slide03 from "../../assets/images/slider-img/ape-slider-03@1x.jpg";
@@ -15,72 +16,72 @@ import slide14 from "../../assets/images/slider-img/ape-slider-14@1x.jpg";
 
 export const slidesData = [
   {
-    id: 1,
+    id: nanoid(),
     url: slide01,
     alt: "Slide 1",
   },
   {
-    id: 2,
+    id: nanoid(),
     url: slide02,
     alt: "Slide 2",
   },
   {
-    id: 3,
+    id: nanoid(),
     url: slide03,
     alt: "Slide 3",
   },
   {
-    id: 4,
+    id: nanoid(),
     url: slide04,
     alt: "Slide 4",
   },
   {
-    id: 5,
+    id: nanoid(),
     url: slide05,
     alt: "Slide 5",
   },
   {
-    id: 6,
+    id: nanoid(),
     url: slide06,
     alt: "Slide 6",
   },
   {
-    id: 7,
+    id: nanoid(),
     url: slide07,
     alt: "Slide 7",
   },
   {
-    id: 8,
+    id: nanoid(),
     url: slide08,
     alt: "Slide 8",
   },
   {
-    id: 9,
+    id: nanoid(),
     url: slide09,
     alt: "Slide 9",
   },
   {
-    id: 10,
+    id: nanoid(),
     url: slide10,
     alt: "Slide 10",
   },
   {
-    id: 11,
+    id: nanoid(),
     url: slide11,
     alt: "Slide 11",
   },
   {
-    id: 12,
+    id: nanoid(),
     url: slide12,
     alt: "Slide 12",
   },
   {
-    id: 13,
+    id: nanoid(),
     url: slide13,
     alt: "Slide 13",
   },
   {
-    id: 14,
+    id: nanoid(),
     url: slide14,
     alt: "Slide 14",
   },
