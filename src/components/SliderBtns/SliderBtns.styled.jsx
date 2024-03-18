@@ -20,4 +20,11 @@ export const SliderBtn = styled.button`
   font-family: ${staticTheme.fonts.fontAccent};
   font-size: 24px;
   line-height: 125%;
+
+  transition: all 250ms ${staticTheme.timingFunction.cubicBezier};
+
+  &:hover,
+  &:focus {
+    color: ${staticTheme.colors.txtAccent};
+  }
 `;
