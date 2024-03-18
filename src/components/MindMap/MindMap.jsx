@@ -1,4 +1,5 @@
 import Section from "../Section";
+// import * as s from "./MindMap.styled";
 
 const MindMap = () => {
   return (

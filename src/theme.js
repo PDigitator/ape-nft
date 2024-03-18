@@ -23,7 +23,7 @@ export const staticTheme = {
   },
 
   breakpoints: {
-    mobileMin: "360px",
+    mobile: "360px",
     mobileMax: "480px",
     tablet: "768px",
     desktop: "1280px",

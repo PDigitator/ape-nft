@@ -1,4 +1,5 @@
 import Section from "../Section";
+// import * as s from "./Mint.styled";
 
 const Mint = () => {
   return (

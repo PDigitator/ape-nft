@@ -3,7 +3,7 @@
 /* BiroScriptPlus-Bold */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "BiroScript";
+  font-family: "Biro Script";
   font-style: normal;
   font-weight: 700;
   src: url("../assets/fonts/BiroScriptPlus-Bold.eot"); /* IE9 Compat Modes */
@@ -21,7 +21,7 @@
 /* BiroScriptUSPlus-Bold */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "BiroScriptUS";
+  font-family: "Biro Script US";
   font-style: normal;
   font-weight: 700;
   src: url("../assets/fonts/BiroScriptUSPlus-Bold.eot"); /* IE9 Compat Modes */
@@ -39,7 +39,7 @@
 /* MessinaSansMono-Regular */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "MessinaSansMono";
+  font-family: "Messina Sans Mono";
   font-style: normal;
   font-weight: 400;
   src: url("../assets/fonts/MessinaSansMono-Regular.eot"); /* IE9 Compat Modes */
@@ -57,7 +57,7 @@
 /* MessinaSansMono-SemiBold */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "MessinaSansMono";
+  font-family: "Messina Sans Mono";
   font-style: normal;
   font-weight: 600;
   src: url("../assets/fonts/MessinaSansMono-SemiBold.eot"); /* IE9 Compat Modes */
@@ -75,7 +75,7 @@
 /* RightGrotesk-CompactBlack */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "RightGrotesk";
+  font-family: "Right Grotesk";
   font-style: normal;
   font-weight: 900;
   src: url("../assets/fonts/RightGrotesk-CompactBlack.eot"); /* IE9 Compat Modes */

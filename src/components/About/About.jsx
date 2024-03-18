@@ -1,4 +1,5 @@
 import Section from "../Section";
+// import * as s from "./About.styled";
 
 const About = () => {
   return (

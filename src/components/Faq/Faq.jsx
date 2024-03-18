@@ -1,4 +1,5 @@
 import Section from "../Section";
+// import * as s from "./Faq.styled";
 
 const Faq = () => {
   return (
