@@ -1,12 +1,23 @@
 import { useSwiper } from "swiper/react";
+import Button from "../Button";
 import * as s from "./SliderBtns.styled";
 
 const SliderBtns = () => {
   const swiper = useSwiper();
   return (
     <s.BtnsWrap>
-      <s.SliderBtn onClick={() => swiper.slidePrev()}>Prev</s.SliderBtn>
-      <s.SliderBtn onClick={() => swiper.slideNext()}>Next</s.SliderBtn>
+      <Button
+        name="slider"
+        type="button"
+        text="Prev"
+        onClick={() => swiper.slidePrev()}
+      ></Button>
+      <Button
+        name="slider"
+        type="button"
+        text="Next"
+        onClick={() => swiper.slideNext()}
+      ></Button>
     </s.BtnsWrap>
   );
 };

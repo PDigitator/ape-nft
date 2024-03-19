@@ -16,6 +16,46 @@ const Slider = ({ slidesData }) => {
     },
   };
 
+  const renderSlide = (slide) => {
+    switch (slide.type) {
+      case "text":
+        return (
+          <s.TxtThumb>
+            <s.Description>{slide.description}</s.Description>
+            <s.SubTitle>{slide.subTitle}</s.SubTitle>
+          </s.TxtThumb>
+        );
+      case "learn-more":
+        return (
+          <a href={slide.url} rel="noopener noreferrer nofollow">
+            <s.LearnMoreThumb>
+              <s.IconWrap>{slide.icon()}</s.IconWrap>
+              <s.SubTitle>{slide.subTitle}</s.SubTitle>
+            </s.LearnMoreThumb>
+          </a>
+        );
+      case "image":
+        return (
+          <s.ImgThumb>
+            <s.Image
+              src={slide.url}
+              alt={slide.alt}
+              srcSet={`${slide.url} 1x, ${slide.url.replace(
+                "@1x.jpg",
+                "@2x.jpg"
+              )} 2x`}
+            />
+          </s.ImgThumb>
+        );
+      default:
+        return null;
+    }
+  };
+
+  const renderedSlides = slidesData.map((slide) => (
+    <SwiperSlide key={slide.id}>{renderSlide(slide)}</SwiperSlide>
+  ));
+
   return (
     <Swiper
       spaceBetween={24}
@@ -24,45 +64,7 @@ const Slider = ({ slidesData }) => {
       initialSlide={0}
       breakpoints={breakpoints}
     >
-      {slidesData.map((slide) => {
-        switch (slide.type) {
-          case "text":
-            return (
-              <SwiperSlide key={slide.id}>
-                <s.TxtThumb>
-                  <s.Description>{slide.description}</s.Description>
-                  <s.SubTitle>{slide.subTitle}</s.SubTitle>
-                </s.TxtThumb>
-              </SwiperSlide>
-            );
-          case "learn-more":
-            return (
-              <SwiperSlide key={slide.id}>
-                <s.LearnMoreThumb>
-                  <s.IconWrap>{slide.icon()}</s.IconWrap>
-                  <s.SubTitle>{slide.subTitle}</s.SubTitle>
-                </s.LearnMoreThumb>
-              </SwiperSlide>
-            );
-          case "image":
-            return (
-              <SwiperSlide key={slide.id}>
-                <s.ImgThumb>
-                  <s.Image
-                    src={slide.url}
-                    alt={slide.alt}
-                    srcSet={`${slide.url} 1x, ${slide.url.replace(
-                      "@1x.jpg",
-                      "@2x.jpg"
-                    )} 2x`}
-                  />
-                </s.ImgThumb>
-              </SwiperSlide>
-            );
-          default:
-            return null;
-        }
-      })}
+      {renderedSlides}
       <SliderBtns />
     </Swiper>
   );

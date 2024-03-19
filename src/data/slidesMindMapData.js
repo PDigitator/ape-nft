@@ -28,5 +28,6 @@ export const slidesMindMapData = [
     type: "learn-more",
     subTitle: "Learn\nmore\nin mind map",
     icon: Icon,
+    url: "https://boredapeyachtclub.com/",
   },
 ];

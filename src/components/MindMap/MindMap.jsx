@@ -14,4 +14,4 @@ const MindMap = () => {
 
 export default MindMap;
 
-//twitter.com/apenftorg
+// twitter.com / apenftorg;

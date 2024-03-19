@@ -1,48 +1,38 @@
-import * as s from './Button.styled';
+import * as s from "./Button.styled";
 
-const Button = ({ name, type, text, onClick, children }) => {
+const Button = ({ name, type, text, onClick }) => {
   let BtnComponent;
 
   switch (name) {
-    case 'load':
+    case "menu":
       BtnComponent = (
-        <s.BtnLoad type={type} onClick={onClick} aria-label={name}>
+        <s.BtnMenu type={type} onClick={onClick} aria-label={name}>
           {text && text}
-        </s.BtnLoad>
+        </s.BtnMenu>
       );
       break;
 
-    case 'learn':
+    case "modal":
       BtnComponent = (
-        <s.BtnLearn type={type} onClick={onClick} aria-label={name}>
+        <s.BtnModal type={type} onClick={onClick} aria-label={name}>
           {text && text}
-        </s.BtnLearn>
+        </s.BtnModal>
       );
       break;
 
-    case 'search':
+    case "slider":
       BtnComponent = (
-        <s.BtnSearch type={type} onClick={onClick} aria-label={name}>
+        <s.BtnSlider type={type} onClick={onClick} aria-label={text}>
           {text && text}
-        </s.BtnSearch>
+        </s.BtnSlider>
       );
       break;
 
-    case 'close':
+    case "form":
       BtnComponent = (
-        <s.BtnClose type={type} onClick={onClick} aria-label={name}>
+        <s.BtnForm type={type} onClick={onClick} aria-label={name}>
           {text && text}
-          {children}
-        </s.BtnClose>
-      );
-      break;
-
-    case 'favorite':
-      BtnComponent = (
-        <s.BtnFavirite type={type} onClick={onClick} aria-label={name}>
-          {text && text}
-          {children}
-        </s.BtnFavirite>
+        </s.BtnForm>
       );
       break;
 
@@ -50,7 +40,6 @@ const Button = ({ name, type, text, onClick, children }) => {
       BtnComponent = (
         <s.Btn type={type} onClick={onClick} aria-label={name}>
           {text && text}
-          {children}
         </s.Btn>
       );
       break;

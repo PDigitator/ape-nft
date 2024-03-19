@@ -11,6 +11,10 @@ export const staticTheme = {
     bgNavSecondary: "rgba(255, 255, 255, 0.10)",
   },
 
+  filters: {
+    backdrop: "blur(6px)",
+  },
+
   timingFunction: {
     cubicBezier: "cubic-bezier(0.4, 0, 0.2, 1)",
   },
