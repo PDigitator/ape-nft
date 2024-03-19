@@ -8,16 +8,12 @@ const Mint = () => {
   }; //!
 
   return (
-    <Section anchorId="mint" title="Car">
+    <Section anchorId="mint" title="Are you in?">
       <p>Mint</p>
       <Button name="menu" type="button" text="Menu" onClick={onClick}></Button>
+
       <Button name="modal" type="button" text="Menu" onClick={onClick}></Button>
-      <Button
-        name="slider"
-        type="button"
-        text="Next"
-        onClick={onClick}
-      ></Button>
+
       <Button name="form" type="button" text="Mint" onClick={onClick}></Button>
     </Section>
   );

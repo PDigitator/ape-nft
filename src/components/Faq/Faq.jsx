@@ -3,7 +3,7 @@ import Section from "../Section";
 
 const Faq = () => {
   return (
-    <Section anchorId="faq" title="Car">
+    <Section anchorId="faq" title="Faq">
       <p>Faq</p>
     </Section>
   );

@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid";
 import Icon from "../assets/icons/up-right-arrow-48x48.svg?react";
 
-export const slidesMindMapData = [
+export const cardsMindMapData = [
   {
     id: nanoid(),
     type: "text",

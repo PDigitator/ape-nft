@@ -40,4 +40,23 @@ export const TitleHidden = styled.h2`
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-`; //!
+`;
+
+export const Title = styled.h2`
+  color: ${staticTheme.colors.txtPrimary};
+  font-family: ${staticTheme.fonts.fontTitle};
+  font-size: 44px;
+  font-weight: 900;
+  line-height: calc(40 / 44);
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
+    font-size: 80px;
+    line-height: 100%;
+  }
+
+  @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    font-size: 160px;
+  }
+`;

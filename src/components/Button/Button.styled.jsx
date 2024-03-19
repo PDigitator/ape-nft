@@ -65,8 +65,10 @@ export const BtnSlider = styled(Btn)`
 `;
 
 export const BtnForm = styled(Btn)`
+  display: block;
+  margin: 0 auto;
   min-width: 216px;
-  padding: 12px 0;
+  padding: 10px 0 12px;
 
   border-radius: 8px;
   background-color: ${staticTheme.colors.bgAccent};
@@ -90,7 +92,7 @@ export const BtnForm = styled(Btn)`
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
     min-width: 397px;
-    padding: 16px 0;
+    padding: 16px 0 20px;
 
     border-radius: 12px;
 

@@ -5,7 +5,12 @@ const Section = ({ anchorId, title, children }) => {
     <>
       <s.SectionWrap id={anchorId}>
         <s.Container>
-          {title && <s.TitleHidden>{title}</s.TitleHidden>}
+          {title === "About" ? (
+            <s.TitleHidden>{title}</s.TitleHidden>
+          ) : (
+            <s.Title>{title}</s.Title>
+          )}
+
           {children}
         </s.Container>
       </s.SectionWrap>

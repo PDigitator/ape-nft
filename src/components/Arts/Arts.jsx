@@ -1,14 +1,14 @@
 import Section from "../Section";
 import Slider from "../Slider";
-import { slidesArtsData } from "../../data/slidesArtsData";
+import { cardsArtsData } from "../../data/cardsArtsData";
 
 // import * as s from "./Arts.styled";
 
 const Arts = () => {
   return (
-    <Section anchorId="arts" title="Car">
+    <Section anchorId="arts" title="Collection">
       <p>Arts</p>
-      <Slider slidesData={slidesArtsData} />
+      <Slider cardsData={cardsArtsData} />
     </Section>
   );
 };
