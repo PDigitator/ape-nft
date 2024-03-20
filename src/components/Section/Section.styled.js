@@ -20,6 +20,8 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 0 calc(72px + ((276 - 72) * (100vw - 360px) / (768 - 360)));
 
+  scroll-behavior: smooth; //! плавна прокрутка
+
   @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
     padding: 0 calc(88px + ((344 - 88) * (100vw - 768px) / (1280 - 768)));
   }
@@ -43,6 +45,7 @@ export const TitleHidden = styled.h2`
 `;
 
 export const Title = styled.h2`
+  margin-bottom: 24px;
   color: ${staticTheme.colors.txtPrimary};
   font-family: ${staticTheme.fonts.fontTitle};
   font-size: 44px;
@@ -52,11 +55,21 @@ export const Title = styled.h2`
   text-transform: uppercase;
 
   @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
+    margin-bottom: 40px;
     font-size: 80px;
     line-height: 100%;
   }
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    margin-bottom: 80px;
     font-size: 160px;
+  }
+`;
+
+export const TitleFaq = styled(Title)`
+  @media screen and (min-width: ${staticTheme.breakpoints
+      .tablet}) and (max-width: calc(${staticTheme.breakpoints
+      .desktop} - 0.5px)) {
+    margin-bottom: 48px;
   }
 `;

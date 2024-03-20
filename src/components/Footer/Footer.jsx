@@ -1,12 +1,13 @@
-// import Section from "../Section";
-// import * as s from "./Footer.styled";
+import { Container } from "../Section/Section.styled";
+import * as s from "./Footer.styled";
 
 const Footer = () => {
   return (
-    <>
-      {/* <Footer /> */}
-      <p>Footer</p>
-    </>
+    <s.FooterWrap>
+      <Container>
+        <s.Content>{"\u00A9"} Yacht ape 2024 all rights reserved</s.Content>
+      </Container>
+    </s.FooterWrap>
   );
 };
 

@@ -7,6 +7,8 @@ const Section = ({ anchorId, title, children }) => {
         <s.Container>
           {title === "About" ? (
             <s.TitleHidden>{title}</s.TitleHidden>
+          ) : title === "Faq" ? (
+            <s.TitleFaq>{title}</s.TitleFaq>
           ) : (
             <s.Title>{title}</s.Title>
           )}

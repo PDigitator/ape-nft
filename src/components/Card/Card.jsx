@@ -2,7 +2,7 @@ import * as s from "./Card.styled";
 
 const Card = ({ card }) => {
   switch (card.type) {
-    case "text":
+    case "text-m-map":
       return (
         <s.TxtThumb>
           <s.Description>{card.description}</s.Description>
@@ -18,7 +18,7 @@ const Card = ({ card }) => {
           </s.LearnMoreThumb>
         </a>
       );
-    case "image":
+    case "image-slide":
       return (
         <s.ImgThumb>
           <s.Image

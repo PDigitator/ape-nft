@@ -6,12 +6,25 @@ export const TxtThumb = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   height: 256px;
   max-width: 216px;
   padding: 24px 12px;
   border-radius: 12px;
   background-color: ${staticTheme.colors.bgSecondary};
   color: ${staticTheme.colors.txtPrimary};
+
+  @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
+    height: 242px;
+    max-width: 284px;
+    padding: 24px;
+    border-radius: 16px;
+  }
+
+  @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    height: 480px;
+    max-width: 504px;
+  }
 `;
 
 export const LearnMoreThumb = styled(TxtThumb)`
@@ -26,6 +39,10 @@ export const SubTitle = styled.h3`
   text-transform: uppercase;
 
   white-space: pre-wrap;
+
+  @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    font-size: 64px;
+  }
 `;
 
 export const Description = styled.p`
@@ -33,22 +50,40 @@ export const Description = styled.p`
   font-size: 12px;
   line-height: calc(14 / 12);
   text-transform: uppercase;
+
+  @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
+    padding-left: 108px;
+  }
+
+  @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    padding-left: 228px;
+
+    font-size: 24px;
+    line-height: calc(29 / 24);
+  }
 `;
 
 export const IconWrap = styled.span`
-  display: flex;
-  justify-content: right;
+  width: 48px;
+  height: 48px;
+  margin-left: auto;
+
+  @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 export const ImgThumb = styled.div`
   height: 256px;
   max-width: 216px;
-  border-radius: 24px;
+  border-radius: 12px;
   overflow: hidden;
 
   @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
     height: 336px;
     max-width: 284px;
+    border-radius: 24px;
   }
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
@@ -58,5 +93,6 @@ export const ImgThumb = styled.div`
 `;
 
 export const Image = styled.img`
+  height: 100%;
   object-fit: cover;
 `;
