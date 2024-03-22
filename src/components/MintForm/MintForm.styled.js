@@ -64,26 +64,57 @@ export const FieldInput = styled(Field)`
   text-transform: uppercase;
 
   color: ${(props) =>
+    !props.active && props.empty && !props.error
+      ? staticTheme.colors.txtSecondary
+      : !props.active && props.error
+      ? staticTheme.colors.txtAccent
+      : props.active && props.error
+      ? staticTheme.colors.txtAccent
+      : staticTheme.colors.txtPrimary};
+
+  border: 1px solid
+    ${(props) =>
+      // !props.active && props.empty && !props.error
+      //   ? staticTheme.colors.txtSecondary
+      //   : !props.active && !props.empty
+      //   ? props.error
+      //     ? staticTheme.colors.txtAccent
+      //     : staticTheme.colors.txtPrimary
+      //   : props.active && !props.empty
+      //   ? props.error
+      //     ? staticTheme.colors.txtAccent
+      //     : staticTheme.colors.txtPrimary
+      //   : "green"};
+      !props.active && props.empty && !props.error
+        ? staticTheme.colors.txtSecondary
+        : !props.active && props.error
+        ? staticTheme.colors.txtAccent
+        : props.active && props.error
+        ? staticTheme.colors.txtAccent
+        : staticTheme.colors.txtPrimary};
+
+  /* color: ${(props) =>
     props.error ? staticTheme.colors.txtAccent : staticTheme.colors.txtPrimary};
 
   border: 1px solid
     ${(props) =>
+    props.error
+      ? staticTheme.colors.txtAccent
+      : staticTheme.colors.txtPrimary}; */
+
+  &:hover,
+  &:focus {
+    color: ${(props) =>
       props.error
         ? staticTheme.colors.txtAccent
         : staticTheme.colors.txtPrimary};
 
-  /* color: ${staticTheme.colors.txtSecondary};
-  border: 1px solid ${staticTheme.colors.txtSecondary}; */
-
-  /* &:hover,
-  &:focus {
-    color: ${(props) =>
-    props.error ? staticTheme.colors.txtAccent : staticTheme.colors.txtPrimary};
-
     border: 1px solid
       ${(props) =>
-    props.error ? staticTheme.colors.txtAccent : staticTheme.colors.txtPrimary};
-  } */
+        props.error
+          ? staticTheme.colors.txtAccent
+          : staticTheme.colors.txtPrimary};
+  }
 
   /* &:disabled {
     color: ${staticTheme.colors.txtPlaceholder};
@@ -112,6 +143,8 @@ export const Error = styled(ErrorMessage)`
   font-size: 10px;
   line-height: calc(12 / 10);
   text-transform: uppercase;
+
+  /* visibility: ${({ visible }) => (visible ? "visible" : "hidden")}; //! */
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
     bottom: -16px;

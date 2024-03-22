@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Formik } from "formik";
 import { Report } from "notiflix/build/notiflix-report-aio";
 
@@ -8,6 +9,8 @@ import MetaMaskIcon from "../../assets/icons/metamask.svg?react";
 import * as s from "./MintForm.styled";
 
 const MintForm = () => {
+  const [buttonText, setButtonText] = useState("Mint");
+
   const handleSubmit = (values, { resetForm }) => {
     const user = values.userName.trim().replace("@", "");
 
@@ -22,7 +25,7 @@ const MintForm = () => {
       validationSchema={schemas.custom}
       onSubmit={handleSubmit}
     >
-      {({ errors, touched, isSubmitting }) => (
+      {({ values, errors, touched, isValid, isSubmitting, setFieldValue }) => (
         <s.MForm autoComplete="off">
           <s.FieldWrap>
             <s.IconContainer>
@@ -35,13 +38,16 @@ const MintForm = () => {
               name="userName"
               placeholder="@username"
               error={errors.userName && touched.userName ? "true" : undefined}
-              // disabled={isSubmitting}
-              // active={touched.userName ? "true" : undefined}
-              // value={values.userName}
+              active={touched.userName ? "true" : undefined}
+              empty={!values.userName ? "true" : undefined}
+              onChange={(e) => {
+                setFieldValue("userName", e.target.value);
+                if (!isValid && buttonText === "Error") {
+                  setButtonText("Mint");
+                }
+              }}
             />
-            {errors.userName && touched.userName && (
-              <s.Error name="userName" component="div" />
-            )}
+            {errors.userName && <s.Error name="userName" component="div" />}
           </s.FieldWrap>
 
           <s.FieldWrap>
@@ -59,10 +65,16 @@ const MintForm = () => {
                   ? "true"
                   : undefined
               }
-              // disabled={isSubmitting}
-              // active={touched.walletAddress ? "true" : undefined}
+              active={touched.walletAddress ? "true" : undefined}
+              empty={!values.walletAddress ? "true" : undefined}
+              onChange={(e) => {
+                setFieldValue("walletAddress", e.target.value);
+                if (!isValid && buttonText === "Error") {
+                  setButtonText("Mint");
+                }
+              }}
             />
-            {errors.walletAddress && touched.walletAddress && (
+            {errors.walletAddress && (
               <s.Error name="walletAddress" component="div" />
             )}
           </s.FieldWrap>
@@ -70,14 +82,13 @@ const MintForm = () => {
           <Button
             name="form"
             type="submit"
-            text={
-              isSubmitting
-                ? "Minted"
-                : Object.keys(errors).length > 0
-                ? "Error"
-                : "Mint"
-            }
-            disabled={isSubmitting}
+            text={isSubmitting ? "Minted" : buttonText}
+            onClick={() => {
+              if (!isValid) {
+                setButtonText("Error");
+              }
+            }}
+            disabled={isSubmitting} //!
           />
         </s.MForm>
       )}
@@ -86,3 +97,5 @@ const MintForm = () => {
 };
 
 export default MintForm;
+
+// text={!isValid ? "Error" : isSubmitting ? "Minted" : buttonText}
