@@ -3,12 +3,14 @@ export const staticTheme = {
     txtPrimary: "#ffffff",
     txtSecondary: "#1E1E1E",
     txtAccent: "#DC3B5A",
+    txtPlaceholder: "rgba(255, 255, 255, 0.24)",
 
     bgPrimary: "#181818",
     bgSecondary: "#1E1E1E",
     bgAccent: "#DC3B5A",
     bgNavPrimary: "rgba(30, 30, 30, 0.10)",
     bgNavSecondary: "rgba(255, 255, 255, 0.10)",
+    discord: "#5A65F2",
   },
 
   filters: {

@@ -16,18 +16,17 @@ export const SectionWrap = styled.section`
 
 export const Container = styled.div`
   /* min-width: ${staticTheme.breakpoints.mobile}; */ //!
-  /* max-width: ${staticTheme.breakpoints.mobileMax}; */ //!
+  /* max-width: ${staticTheme.breakpoints.mobileMax}; //! */
   margin: 0 auto;
-  padding: 0 calc(72px + ((276 - 72) * (100vw - 360px) / (768 - 360)));
 
-  scroll-behavior: smooth; //! плавна прокрутка
+  padding: 0 calc((100vw - 216px) / 2);
 
   @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
-    padding: 0 calc(88px + ((344 - 88) * (100vw - 768px) / (1280 - 768)));
+    padding: 0 calc((100vw - 592px) / 2);
   }
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
-    padding: 0 calc(124px + ((204 - 124) * (100vw - 1280px) / (1440 - 1280)));
+    padding: 0 calc((100vw - 1032px) / 2);
   }
 `;
 

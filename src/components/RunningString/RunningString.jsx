@@ -1,9 +1,9 @@
 import { useRef } from "react";
-import * as s from "./RunningString.styled";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 import CrossIcon from "../../assets/icons/cross.svg?react";
+import * as s from "./RunningString.styled";
 
 const RunningText = () => {
   const textRef = useRef(null);
@@ -23,8 +23,8 @@ const RunningText = () => {
   });
 
   return (
-    <s.Wrap className="container">
-      <s.Text className="text" ref={textRef}>
+    <s.Wrap>
+      <s.Text ref={textRef}>
         <s.Span ref={spanRef}>Destroy stereotypes</s.Span>
         <s.IconWrap>
           <CrossIcon />
@@ -46,6 +46,9 @@ const RunningText = () => {
           <CrossIcon />
         </s.IconWrap>
         <s.Span>Break rules</s.Span>
+        <s.IconWrap>
+          <CrossIcon />
+        </s.IconWrap>
       </s.Text>
     </s.Wrap>
   );

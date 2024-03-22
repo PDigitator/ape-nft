@@ -7,10 +7,10 @@ import { staticTheme } from "../../theme";
 
 const Slider = ({ cardsData }) => {
   const breakpoints = {
-    [staticTheme.breakpoints.desktop.slice(0, -2) - 1]: {
+    [staticTheme.breakpoints.desktop.slice(0, -2) - 0.5]: {
       slidesPerView: 4,
     },
-    [staticTheme.breakpoints.tablet.slice(0, -2) - 1]: {
+    [staticTheme.breakpoints.tablet.slice(0, -2) - 0.5]: {
       slidesPerView: 2,
     },
   };

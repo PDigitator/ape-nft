@@ -3,9 +3,8 @@ import { staticTheme } from "../../theme";
 
 export const TxtThumb = styled.div`
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  align-content: space-between;
 
   height: 256px;
   max-width: 216px;
@@ -64,9 +63,17 @@ export const Description = styled.p`
 `;
 
 export const IconWrap = styled.span`
+  position: relative;
   width: 48px;
   height: 48px;
   margin-left: auto;
+
+  ${LearnMoreThumb}:hover &,
+  ${LearnMoreThumb}:focus &, 
+  ${LearnMoreThumb}:active & {
+    top: -12px;
+    right: -12px;
+  }
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
     width: 64px;

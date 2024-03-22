@@ -15,7 +15,7 @@ import { staticTheme } from "./theme";
 const App = () => {
   const mediaQueryRef = useRef(
     window.matchMedia(
-      `(max-width: calc(${staticTheme.breakpoints.mobileMax} + 0.5px))`
+      `(max-width: calc(${staticTheme.breakpoints.tablet} - 0.5px))`
     )
   );
 
