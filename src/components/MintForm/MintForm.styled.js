@@ -74,17 +74,6 @@ export const FieldInput = styled(Field)`
 
   border: 1px solid
     ${(props) =>
-      // !props.active && props.empty && !props.error
-      //   ? staticTheme.colors.txtSecondary
-      //   : !props.active && !props.empty
-      //   ? props.error
-      //     ? staticTheme.colors.txtAccent
-      //     : staticTheme.colors.txtPrimary
-      //   : props.active && !props.empty
-      //   ? props.error
-      //     ? staticTheme.colors.txtAccent
-      //     : staticTheme.colors.txtPrimary
-      //   : "green"};
       !props.active && props.empty && !props.error
         ? staticTheme.colors.txtSecondary
         : !props.active && props.error
@@ -92,15 +81,6 @@ export const FieldInput = styled(Field)`
         : props.active && props.error
         ? staticTheme.colors.txtAccent
         : staticTheme.colors.txtPrimary};
-
-  /* color: ${(props) =>
-    props.error ? staticTheme.colors.txtAccent : staticTheme.colors.txtPrimary};
-
-  border: 1px solid
-    ${(props) =>
-    props.error
-      ? staticTheme.colors.txtAccent
-      : staticTheme.colors.txtPrimary}; */
 
   &:hover,
   &:focus {
@@ -115,11 +95,6 @@ export const FieldInput = styled(Field)`
           ? staticTheme.colors.txtAccent
           : staticTheme.colors.txtPrimary};
   }
-
-  /* &:disabled {
-    color: ${staticTheme.colors.txtPlaceholder};
-    border: 1px solid ${staticTheme.colors.txtPlaceholder};
-  } */
 
   &::placeholder {
     color: ${staticTheme.colors.txtPlaceholder};
@@ -143,8 +118,6 @@ export const Error = styled(ErrorMessage)`
   font-size: 10px;
   line-height: calc(12 / 10);
   text-transform: uppercase;
-
-  /* visibility: ${({ visible }) => (visible ? "visible" : "hidden")}; //! */
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
     bottom: -16px;
