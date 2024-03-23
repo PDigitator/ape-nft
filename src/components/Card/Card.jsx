@@ -9,6 +9,7 @@ const Card = ({ card }) => {
           <s.SubTitle>{card.subTitle}</s.SubTitle>
         </s.TxtThumb>
       );
+
     case "learn-more":
       return (
         <a href={card.url} rel="noopener noreferrer nofollow">
@@ -18,19 +19,41 @@ const Card = ({ card }) => {
           </s.LearnMoreThumb>
         </a>
       );
+
     case "image-slide":
       return (
         <s.ImgThumb>
           <s.Image
-            src={card.url}
-            alt={card.alt}
             srcSet={`${card.url} 1x, ${card.url.replace(
               "@1x.jpg",
               "@2x.jpg"
             )} 2x`}
+            src={card.url}
+            alt={card.alt}
           />
         </s.ImgThumb>
       );
+
+    case "faq":
+      return (
+        <>
+          <s.FaqImgThumb>
+            <s.Image
+              srcSet={`${card.url} 1x, ${card.url.replace(
+                "@1x.jpg",
+                "@2x.jpg"
+              )} 2x`}
+              src={card.url}
+              alt={card.alt}
+            />
+          </s.FaqImgThumb>
+          <s.FaqTxtThumb>
+            <s.FaqSubTitle>{card.subTitle}</s.FaqSubTitle>
+            <s.FaqDescription>{card.description}</s.FaqDescription>
+          </s.FaqTxtThumb>
+        </>
+      );
+
     default:
       return null;
   }

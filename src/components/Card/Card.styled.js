@@ -103,3 +103,97 @@ export const Image = styled.img`
   height: 100%;
   object-fit: cover;
 `;
+
+export const FaqImgThumb = styled.div`
+  display: none;
+
+  @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
+    position: absolute;
+    z-index: 1000;
+    top: -12px;
+    left: 19px;
+
+    height: 183px;
+    max-width: 148px;
+    border-radius: 16px;
+    overflow: hidden;
+
+    @keyframes rotateCard {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(-16deg);
+      }
+    }
+
+    animation: rotateCard 250ms ${staticTheme.timingFunction.cubicBezier}
+      forwards;
+  }
+
+  @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    top: -16px;
+    left: 16px;
+    height: 282px;
+    max-width: 248px;
+    border-radius: 24px;
+
+    @keyframes rotateCard {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(-8deg);
+      }
+    }
+  }
+`;
+
+export const FaqTxtThumb = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
+    gap: 12px;
+  }
+
+  @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    gap: 36px;
+  }
+`;
+
+export const FaqSubTitle = styled.h3`
+  font-family: ${staticTheme.fonts.fontTitle};
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 100%;
+  text-transform: uppercase;
+
+  @media screen and (max-width: ${staticTheme.breakpoints.tablet - 0.5}) {
+    white-space: pre-wrap;
+  }
+
+  @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
+    font-size: 32px;
+  }
+
+  @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    font-size: 54px;
+    line-height: calc(64 / 54);
+  }
+`;
+
+export const FaqDescription = styled.p`
+  display: none;
+
+  font-family: ${staticTheme.fonts.fontPrimary};
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  text-transform: uppercase;
+
+  @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
+`;
