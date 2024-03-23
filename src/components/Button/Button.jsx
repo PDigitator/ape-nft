@@ -1,6 +1,6 @@
 import * as s from "./Button.styled";
 
-const Button = ({ name, type, text, onClick }) => {
+const Button = ({ name, type, text, onClick, disabled = false }) => {
   let BtnComponent;
 
   switch (name) {
@@ -30,7 +30,12 @@ const Button = ({ name, type, text, onClick }) => {
 
     case "form":
       BtnComponent = (
-        <s.BtnForm type={type} onClick={onClick} aria-label={name}>
+        <s.BtnForm
+          type={type}
+          onClick={onClick}
+          aria-label={name}
+          disabled={disabled}
+        >
           {text && text}
         </s.BtnForm>
       );

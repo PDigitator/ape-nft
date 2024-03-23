@@ -1,20 +1,26 @@
 import Section from "../Section";
-import Button from "../Button";
-// import * as s from "./Mint.styled";
+import MintForm from "../MintForm";
+import CrossIcon from "../../assets/icons/cross.svg?react";
+import * as s from "./Mint.styled";
 
 const Mint = () => {
-  const onClick = () => {
-    console.log("onClick");
-  }; //!
+  // const onClick = () => {
+  //   console.log("onClick");
+  // }; //!
 
   return (
     <Section anchorId="mint" title="Are you in?">
-      <p>Mint</p>
-      <Button name="menu" type="button" text="Menu" onClick={onClick}></Button>
+      {/* <Button name="menu" type="button" text="Menu" onClick={onClick}></Button>
 
-      <Button name="modal" type="button" text="Menu" onClick={onClick}></Button>
-
-      <Button name="form" type="button" text="Mint" onClick={onClick}></Button>
+      <Button name="modal" type="button" text="Menu" onClick={onClick}></Button> */}
+      <s.TxtContent>
+        <s.IconWrap>
+          <CrossIcon />
+        </s.IconWrap>
+        Join the YACHT APE community to be one of the first to receive our
+        limited edition NFT
+      </s.TxtContent>
+      <MintForm />
     </Section>
   );
 };

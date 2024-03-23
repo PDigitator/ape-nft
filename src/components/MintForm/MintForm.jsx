@@ -10,12 +10,15 @@ import * as s from "./MintForm.styled";
 
 const MintForm = () => {
   const [buttonText, setButtonText] = useState("Mint");
+  const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-  const handleSubmit = (values, { resetForm }) => {
+  const handleSubmit = async (values, { resetForm }) => {
     const user = values.userName.trim().replace("@", "");
-
+    await sleep(1000);
+    setButtonText("Minted");
+    resetForm();
     Report.success(`Congrats ${user}!`, `Welcome aboard!`, "Ok", () => {
-      resetForm();
+      setButtonText("Mint");
     });
   };
 
@@ -24,6 +27,7 @@ const MintForm = () => {
       initialValues={initialValues}
       validationSchema={schemas.custom}
       onSubmit={handleSubmit}
+      validateOnBlur={false}
     >
       {({ values, errors, touched, isValid, isSubmitting, setFieldValue }) => (
         <s.MForm autoComplete="off">
@@ -82,13 +86,13 @@ const MintForm = () => {
           <Button
             name="form"
             type="submit"
-            text={isSubmitting ? "Minted" : buttonText}
+            text={buttonText}
             onClick={() => {
               if (!isValid) {
                 setButtonText("Error");
               }
             }}
-            disabled={isSubmitting} //!
+            disabled={isSubmitting}
           />
         </s.MForm>
       )}
@@ -97,5 +101,3 @@ const MintForm = () => {
 };
 
 export default MintForm;
-
-// text={!isValid ? "Error" : isSubmitting ? "Minted" : buttonText}
