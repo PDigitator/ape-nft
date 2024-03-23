@@ -41,7 +41,7 @@ const App = () => {
       <Hero />
       <About />
       <MindMap isMobileView={isMobileView} />
-      <Faq isMobileView={isMobileView} />
+      <Faq />
       <Arts />
       <Mint />
       <Footer />
