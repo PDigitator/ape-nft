@@ -28,6 +28,7 @@ export const cardsMindMapData = [
     type: "learn-more",
     subTitle: "Learn\nmore\nin mind map",
     icon: ArrowIcon,
-    url: "https://boredapeyachtclub.com/",
+    url: "https://en.wikipedia.org/wiki/Bored_Ape",
+    ariaLabel: "Link to Wiki",
   },
 ];

@@ -39,7 +39,7 @@ export const ModalWrap = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 100vh;
-  padding: 62px calc((100vw - 216px) / 2);
+  padding: 62px calc((100vw - 216px) / 2) 24px;
 
   background-color: ${staticTheme.colors.bgSecondary};
 
