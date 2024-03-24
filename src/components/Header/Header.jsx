@@ -1,13 +1,20 @@
-// import { useEffect } from "react";
-// import { useState } from "react";
-// import { useRef } from "react";
+import Logo from "../Logo";
+import NavMenu from "../NavMenu";
+import SocialMenu from "../SocialMenu";
+import * as s from "./Header.styled";
 
-// import Section from "../Section";
-// import { staticTheme } from "../../theme";
-// import * as s from "./Header.styled";
-
-const Header = ({ isMobileView }) => {
-  return <>{isMobileView ? <p>Header Small</p> : <p>Header Big</p>}</>;
+const Header = () => {
+  return (
+    <s.HeaderWrap>
+      <s.HeaderContainer>
+        <s.Wrap>
+          <Logo type="header" />
+          <NavMenu />
+        </s.Wrap>
+        <SocialMenu type="header" />
+      </s.HeaderContainer>
+    </s.HeaderWrap>
+  );
 };
 
 export default Header;
