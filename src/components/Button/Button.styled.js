@@ -26,9 +26,9 @@ export const BtnMenu = styled(Btn)`
   line-height: calc(14 / 12);
   text-transform: uppercase;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: ${staticTheme.colors.txtPrimary};
+    text-decoration: underline;
   }
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
@@ -46,9 +46,9 @@ export const BtnModal = styled(BtnMenu)`
   background-color: ${staticTheme.colors.bgNavSecondary};
   color: ${staticTheme.colors.txtPrimary};
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: ${staticTheme.colors.txtAccent};
+    text-decoration: none;
   }
 `;
 

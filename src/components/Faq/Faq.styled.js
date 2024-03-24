@@ -13,11 +13,12 @@ export const ListItem = styled.li`
   transition: all 250ms ${staticTheme.timingFunction.cubicBezier};
 
   &:first-child {
-    padding: 0 8px 8px 8px;
+    ${(props) => (props.$active ? `padding-top: 8px;` : `padding-top: 0;`)}
   }
 
   &:last-child {
-    padding: 8px 8px 0 8px;
+    ${(props) =>
+      props.$active ? `padding-bottom: 10px;` : `padding-bottom: 0;`}
   }
 
   @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
@@ -25,11 +26,12 @@ export const ListItem = styled.li`
     gap: 21px;
 
     &:first-child {
-      padding: 0 16px 18px 183px;
+      ${(props) => (props.$active ? `padding-top: 18px;` : `padding-top: 0;`)}
     }
 
     &:last-child {
-      padding: 18px 16px 0 183px;
+      ${(props) =>
+        props.$active ? `padding-bottom: 23px;` : `padding-bottom: 0;`}
     }
   }
 
@@ -38,11 +40,12 @@ export const ListItem = styled.li`
     gap: 27px;
 
     &:first-child {
-      padding: 0 24px 24px 296px;
+      ${(props) => (props.$active ? `padding-top: 24px;` : `padding-top: 0;`)}
     }
 
     &:last-child {
-      padding: 24px 24px 0 296px;
+      ${(props) =>
+        props.$active ? `padding-bottom: 24px;` : `padding-bottom: 0;`}
     }
   }
 
@@ -54,22 +57,19 @@ export const ListItem = styled.li`
   ${(props) =>
     props.$active &&
     `
-    padding-top: 8px !important;    
-    padding-bottom: 10px !important;
+    padding-top: 8px;    
+    padding-bottom: 10px;
     border-radius: 12px;
     color: ${staticTheme.colors.txtAccent};
     background-color: ${staticTheme.colors.bgSecondary};
 
     @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
         border-radius: 16px;
-        padding-top: 18px !important;
-        padding-bottom: 23px !important;
+        
     }
 
     @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
         border-radius: 24px;
-        padding-top: 24px !important;
-        padding-bottom: 24px !important;
     }
 
     &:before {

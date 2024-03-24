@@ -1,6 +1,6 @@
 import * as s from "./Card.styled";
 
-const Card = ({ card }) => {
+const Card = ({ card, type }) => {
   switch (card.type) {
     case "text-m-map":
       return (
@@ -12,12 +12,14 @@ const Card = ({ card }) => {
 
     case "learn-more":
       return (
-        <a href={card.url} rel="noopener noreferrer nofollow">
-          <s.LearnMoreThumb>
-            <s.IconWrap>{card.icon()}</s.IconWrap>
-            <s.SubTitle>{card.subTitle}</s.SubTitle>
-          </s.LearnMoreThumb>
-        </a>
+        <s.LearnMoreLink
+          href={card.url}
+          rel="noopener noreferrer nofollow"
+          aria-label={card.ariaLabel}
+        >
+          <s.IconWrap>{card.icon()}</s.IconWrap>
+          <s.SubTitle>{card.subTitle}</s.SubTitle>
+        </s.LearnMoreLink>
       );
 
     case "image-slide":
@@ -52,6 +54,25 @@ const Card = ({ card }) => {
             <s.FaqDescription>{card.description}</s.FaqDescription>
           </s.FaqTxtThumb>
         </>
+      );
+
+    case "social":
+      return (
+        <s.SocialLink
+          href={card.url}
+          rel="noopener noreferrer nofollow"
+          aria-label={card.ariaLabel}
+          type={type}
+        >
+          <s.SocialIconWrap>{card.icon()}</s.SocialIconWrap>
+        </s.SocialLink>
+      );
+
+    case "burger":
+      return (
+        <s.BurgerLink href={card.url} aria-label={card.ariaLabel} type={type}>
+          {card.description}
+        </s.BurgerLink>
       );
 
     default:

@@ -26,9 +26,33 @@ export const TxtThumb = styled.div`
   }
 `;
 
-export const LearnMoreThumb = styled(TxtThumb)`
+export const LearnMoreLink = styled.a`
+  box-sizing: border-box;
+  display: grid;
+  align-content: space-between;
+
+  height: 256px;
+  max-width: 216px;
+  padding: 24px 12px;
+  border-radius: 12px;
   background-color: ${staticTheme.colors.bgAccent};
+  color: ${staticTheme.colors.txtPrimary};
+
+  @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
+    height: 242px;
+    max-width: 284px;
+    padding: 24px;
+    border-radius: 16px;
+  }
+
+  @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    height: 480px;
+    max-width: 504px;
+  }
 `;
+// export const LearnMoreLink = styled(TxtThumb)`
+//   background-color: ${staticTheme.colors.bgAccent};
+// `; //!!!!!
 
 export const SubTitle = styled.h3`
   font-family: ${staticTheme.fonts.fontTitle};
@@ -68,9 +92,9 @@ export const IconWrap = styled.span`
   height: 48px;
   margin-left: auto;
 
-  ${LearnMoreThumb}:hover &,
-  ${LearnMoreThumb}:focus &, 
-  ${LearnMoreThumb}:active & {
+  ${LearnMoreLink}:hover &,
+  ${LearnMoreLink}:focus &, 
+  ${LearnMoreLink}:active & {
     top: -12px;
     right: -12px;
   }
@@ -193,6 +217,113 @@ export const FaqDescription = styled.p`
   text-transform: uppercase;
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
+`;
+
+export const SocialLink = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: ${(props) =>
+    props.type === "header"
+      ? staticTheme.colors.bgNavPrimary
+      : staticTheme.colors.bgNavSecondary};
+
+  backdrop-filter: ${staticTheme.filters.backdrop};
+
+  color: ${(props) =>
+    props.type === "header"
+      ? staticTheme.colors.txtSecondary
+      : staticTheme.colors.txtPrimary};
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: ${(props) =>
+      props.type === "header"
+        ? staticTheme.colors.txtPrimary
+        : staticTheme.colors.txtAccent};
+  }
+
+  @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+  }
+`;
+
+export const SocialIconWrap = styled.span`
+  display: flex;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+
+  /* color: ${(props) =>
+    props.type === "header"
+      ? staticTheme.colors.txtSecondary
+      : staticTheme.colors.txtPrimary};
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: ${(props) =>
+    props.type === "header"
+      ? staticTheme.colors.txtPrimary
+      : staticTheme.colors.txtAccent};
+  } */
+
+  @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
+    width: 24px;
+    height: 24px;
+  }
+`;
+
+export const BurgerLink = styled.a`
+  display: block;
+  min-width: ${(props) => (props.type === "header" ? "48px" : "120px")};
+  padding: ${(props) => (props.type === "header" ? "17px 0" : "0")};
+
+  border-radius: 8px;
+  background-color: ${(props) =>
+    props.type === "header" ? staticTheme.colors.bgNavPrimary : "transparent"};
+  backdrop-filter: ${staticTheme.filters.backdrop};
+
+  color: ${(props) =>
+    props.type === "header"
+      ? staticTheme.colors.txtSecondary
+      : staticTheme.colors.txtPrimary};
+  font-family: ${staticTheme.fonts.fontPrimary};
+
+  font-size: ${(props) => (props.type === "header" ? "12px" : "24px")};
+  line-height: ${(props) =>
+    props.type === "header" ? "calc(14 / 12)" : "calc(29 / 24)"};
+
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: ${(props) =>
+      props.type === "header"
+        ? staticTheme.colors.txtPrimary
+        : staticTheme.colors.txtAccent};
+    text-decoration: ${(props) =>
+      props.type === "header" ? "underline" : "none"};
+  }
+
+  @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    min-width: 80px;
+    padding: 31px 0;
+
+    border-radius: 12px;
+
     font-size: 16px;
     line-height: calc(19 / 16);
   }
