@@ -1,3 +1,5 @@
+import { useState, useEffect, useRef } from "react";
+
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -6,41 +8,37 @@ import Faq from "./components/Faq";
 import Arts from "./components/Arts";
 import Mint from "./components/Mint";
 import Footer from "./components/Footer";
-
-import { useState } from "react";
-import { useRef } from "react";
-import { useEffect } from "react";
 import { staticTheme } from "./theme";
 
 const App = () => {
-  const mediaQueryRef = useRef(
-    window.matchMedia(
-      `(max-width: calc(${staticTheme.breakpoints.tablet} - 0.5px))`
-    )
-  );
+  // const mediaQueryRef = useRef(
+  //   window.matchMedia(
+  //     `(max-width: calc(${staticTheme.breakpoints.tablet} - 0.5px))`
+  //   )
+  // );
 
-  const mediaQuery = mediaQueryRef.current;
+  // const mediaQuery = mediaQueryRef.current;
 
-  const [isMobileView, setIsMobileView] = useState(mediaQuery.matches);
+  // const [isMobileView, setIsMobileView] = useState(mediaQuery.matches);
 
-  useEffect(() => {
-    const handleResize = (evt) => {
-      setIsMobileView(evt.matches);
-    };
+  // useEffect(() => {
+  //   const handleResize = (evt) => {
+  //     setIsMobileView(evt.matches);
+  //   };
 
-    mediaQuery.addEventListener("change", handleResize);
+  //   mediaQuery.addEventListener("change", handleResize);
 
-    return () => {
-      mediaQuery.removeEventListener("change", handleResize);
-    };
-  }, [mediaQuery]);
+  //   return () => {
+  //     mediaQuery.removeEventListener("change", handleResize);
+  //   };
+  // }, [mediaQuery]);
 
   return (
     <>
-      <Header isMobileView={isMobileView} />
+      <Header />
       <Hero />
       <About />
-      <MindMap isMobileView={isMobileView} />
+      <MindMap />
       <Faq />
       <Arts />
       <Mint />
