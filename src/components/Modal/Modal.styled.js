@@ -41,7 +41,7 @@ export const ModalWrap = styled.div`
   height: 100vh;
   padding: 62px calc((100vw - 216px) / 2);
 
-  background-color: ${staticTheme.colors.txtAccent};
+  background-color: ${staticTheme.colors.bgSecondary};
 
   animation: ${({ isOpen }) => (isOpen ? slidein : slideout)} 250ms
     ${staticTheme.timingFunction.cubicBezier};
