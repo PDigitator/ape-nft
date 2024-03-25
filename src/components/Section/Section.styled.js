@@ -18,11 +18,11 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 0 calc((100vw - 216px) / 2);
 
-  @media screen and (min-width: ${staticTheme.breakpoints
-      .mobile}) and (max-width: calc(${staticTheme.breakpoints
+  @media screen and (min-width: (${staticTheme.breakpoints
+      .mobile})) and (max-width: calc(${staticTheme.breakpoints
       .mobileMax} - 0.5px)) {
     padding: ${(props) =>
-      props.type === "about" ? "72px" : `0 calc((100vw - 216px) / 2)`};
+      props.title === "About" ? "72px" : `0 calc((100vw - 216px) / 2)`};
   }
 
   @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {

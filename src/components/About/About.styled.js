@@ -5,7 +5,6 @@ export const DescrWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-bottom: 332px; */ //!
 
   @media screen and (max-width: calc(${staticTheme.breakpoints
       .tablet} - 0.5px)) {
@@ -13,11 +12,13 @@ export const DescrWrap = styled.div`
   }
 
   @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
-    gap: 24px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
   }
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
-    gap: 36px;
+    gap: 85px;
   }
 `;
 
@@ -31,16 +32,14 @@ export const SubTitle = styled.h3`
   text-transform: uppercase;
   white-space: pre-wrap;
 
-  /* @media screen and (max-width: calc(${staticTheme.breakpoints
-    .tablet} - 0.5px)) {
-    margin-bottom: 16px;
-  } */
-
   @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
     font-size: 60px;
+    min-width: 269px;
+    white-space: normal;
   }
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    min-width: 538px;
     font-size: 120px;
   }
 `;
@@ -56,20 +55,18 @@ export const Description = styled.p`
   text-transform: uppercase;
   text-align: right;
   text-indent: 60%;
-  white-space: pre-wrap;
-
-  @media screen and (max-width: calc(${staticTheme.breakpoints
-      .tablet} - 0.5px)) {
-    margin-bottom: 36px;
-  }
 
   @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
-    text-indent: 60%;
+    padding-top: 11px;
+    text-indent: 0;
+    white-space: pre-wrap;
   }
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    padding-top: 24px;
     font-size: 24px;
     line-height: calc(29 / 24);
+    white-space: pre-wrap;
   }
 `;
 
@@ -78,13 +75,15 @@ export const TextWrap = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  margin-bottom: 332px;
 
   @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
+    max-width: 269px;
+    /* padding-bottom: 36px; */
     gap: 24px;
   }
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    max-width: 417px;
     gap: 36px;
   }
 `;
@@ -99,13 +98,22 @@ export const IconWrap = styled.span`
   }
 `;
 
-export const AboutText = styled(Description)`
+export const AboutText = styled.p`
+  font-family: ${staticTheme.fonts.fontPrimary};
+  font-size: 12px;
+  line-height: calc(14 / 12);
+
+  text-transform: uppercase;
+  white-space: pre-wrap;
   text-align: center;
 
-  @media screen and (max-width: calc(${staticTheme.breakpoints
-      .tablet} - 0.5px)) {
-    /* margin-bottom: 332px; */ //!
-    font-size: 12px;
-    line-height: calc(14 / 12);
+  @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
+
+  @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    font-size: 24px;
+    line-height: calc(29 / 24);
   }
 `;

@@ -14,11 +14,10 @@ const About = () => {
             <s.Span> One Simple{"\n"}Ape</s.Span>
           </s.SubTitle>
           <s.Description>
-            Who Got{"\n"}Fed Up With Boring And Hypocritic Commonplace This Is
-            How The Idea Of Escaping And Dynamic Journey On The{"\n"}Yacht
+            Who Got Fed Up With Boring And Hypocritic Commonplace This Is How
+            The Idea Of Escaping And Dynamic Journey On The{"\n"}Yacht
           </s.Description>
         </s.DescrWrap>
-
         <s.TextWrap>
           <s.IconWrap>
             <CrossIcon />
