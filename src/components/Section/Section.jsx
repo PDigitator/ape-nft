@@ -4,7 +4,7 @@ const Section = ({ anchorId, title, children }) => {
   return (
     <>
       <s.SectionWrap id={anchorId}>
-        <s.Container>
+        <s.Container title={title}>
           {title === "About" ? (
             <s.TitleHidden>{title}</s.TitleHidden>
           ) : title === "Faq" ? (
