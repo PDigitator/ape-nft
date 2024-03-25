@@ -53,19 +53,37 @@ const BackgroundImage = styled.div`
   }
 `;
 
+// helper.js
+import Image1x from "../../assets/images/hero-img/ape-hero-desktop@1x.png";
+import Image2x from "../../assets/images/hero-img/ape-hero-desktop@2x.png";
+import Image1xWebp from "../../assets/images/hero-img/ape-hero-desktop@1x.webp";
+import Image2xWebp from "../../assets/images/hero-img/ape-hero-desktop@2x.webp";
+
+export const getImageObjects = () => {
+  return {
+    "@1x": { png: Image1x, webp: Image1xWebp },
+    "@2x": { png: Image2x, webp: Image2xWebp },
+  };
+};
+
 // Приклад використання компонента BackgroundImage:
+
+import { getImageObjects } from "./helper";
+
 const MyComponent = () => {
+  const imageObjects = getImageObjects();
+
   return (
     <BackgroundImage
-      src="/path/to/image.png"
-      srcMobile1x="/path/to/image-mobile.png"
-      srcMobile2x="/path/to/image-mobile@2x.png"
-      srcTablet1x="/path/to/image-tablet.png"
-      srcTablet2x="/path/to/image-tablet@2x.png"
-      srcDesktop1x="/path/to/image-desktop.png"
-      srcDesktop2x="/path/to/image-desktop@2x.png"
+      src={imageObjects["@1x"].png}
+      srcMobile1x={imageObjects["@1x"].png}
+      srcMobile2x={imageObjects["@2x"].png}
+      srcTablet1x={imageObjects["@1x"].png}
+      srcTablet2x={imageObjects["@2x"].png}
+      srcDesktop1x={imageObjects["@1x"].png}
+      srcDesktop2x={imageObjects["@2x"].png}
     />
   );
 };
 
-export default BackgroundImage;
+export default MyComponent;

@@ -50,9 +50,6 @@ export const LearnMoreLink = styled.a`
     max-width: 504px;
   }
 `;
-// export const LearnMoreLink = styled(TxtThumb)`
-//   background-color: ${staticTheme.colors.bgAccent};
-// `; //!!!!!
 
 export const SubTitle = styled.h3`
   font-family: ${staticTheme.fonts.fontTitle};
