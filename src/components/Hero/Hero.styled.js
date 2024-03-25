@@ -36,47 +36,28 @@ export const HeroContainer = styled.div`
   }
 `;
 
-export const BgrWrap = styled.div`
-  display: flex;
-  justify-content: center;
-  min-height: 542px;
-  padding: 36px 63px 19px;
-  border-radius: 8px;
-  background-color: ${staticTheme.colors.bgAccent};
-
-  @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
-    min-height: 421px;
-    padding: 35px 63px 35px;
-    border-radius: 16px;
-  }
-
-  @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
-    min-height: 677px;
-    padding: 35px 100px 35px;
-    border-radius: 24px;
-  }
-`;
-
 export const ContentWrap = styled.div`
   position: relative;
-  height: 487px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
-    height: 351px;
-    flex-direction: column;
-    justify-content: center;
+  @media screen and (max-width: calc(${staticTheme.breakpoints
+      .tablet} - 0.5px)) {
+    width: 216px;
   }
 
-  @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
-    height: 607px;
+  @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    overflow: hidden;
   }
 `;
 
-export const TitleContainer = styled.div``; //!
+export const TitleContainer = styled.div``;
 
 export const TopTxt = styled.h3`
   color: ${staticTheme.colors.txtSecondary};
@@ -114,18 +95,18 @@ export const Title = styled.h1`
     font-size: 92px;
     letter-spacing: 0.92px;
     text-align: left;
-    word-spacing: 165px;
+    word-spacing: 155px;
   }
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
     margin-bottom: 30px;
     font-size: 164px;
-    word-spacing: 272px;
+    word-spacing: 252px;
   }
 `;
 
 export const BotoomConteiner = styled.div`
-  width: 217px;
+  width: 216px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -143,10 +124,9 @@ export const BotoomConteiner = styled.div`
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
     width: 337px;
-    bottom: 46px;
+    bottom: 81px;
     gap: 28px;
     text-align: justify;
-    white-space: pre-wrap;
   }
 `;
 

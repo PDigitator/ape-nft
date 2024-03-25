@@ -34,7 +34,7 @@ const NavMenu = () => {
     return () => {
       document.body.style.overflow = "auto";
     };
-  }, [showMenu]); //!
+  }, [showMenu]);
 
   const toggleMenu = () => {
     setShowMenu((prevState) => !prevState);

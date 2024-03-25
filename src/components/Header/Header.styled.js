@@ -31,7 +31,6 @@ export const HeaderContainer = styled.div`
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
     padding: 0 calc((100vw - 1216px) / 2);
-    /* padding: 0 32px; */
   }
 `;
 

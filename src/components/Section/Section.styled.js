@@ -15,8 +15,6 @@ export const SectionWrap = styled.section`
 `;
 
 export const Container = styled.div`
-  /* min-width: ${staticTheme.breakpoints.mobile}; */ //!
-  /* max-width: ${staticTheme.breakpoints.mobileMax}; //! */
   margin: 0 auto;
   padding: 0 calc((100vw - 216px) / 2);
 

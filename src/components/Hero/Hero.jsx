@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import HeroImg from "../HeroImg";
+import HeroBgr from "../HeroBgr";
 import { staticTheme } from "../../theme";
 import * as s from "./Hero.styled";
-import {} from "react";
 
 const Hero = () => {
   const mediaQueryRef = useRef(
@@ -26,7 +26,7 @@ const Hero = () => {
   return (
     <s.HeroWrap>
       <s.HeroContainer>
-        <s.BgrWrap>
+        <HeroBgr>
           <s.ContentWrap>
             <s.TitleContainer>
               <s.TopTxt>diD yOu seE iT ?</s.TopTxt>
@@ -44,12 +44,10 @@ const Hero = () => {
               </s.BottomTxt>
             </s.BotoomConteiner>
           </s.ContentWrap>
-        </s.BgrWrap>
+        </HeroBgr>
       </s.HeroContainer>
     </s.HeroWrap>
   );
 };
 
 export default Hero;
-
-/* (max-width: calc(${vars.breakpoints.desktop} - 1px)) */ //!

@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const ImgThumb = styled.div`
   position: absolute;
   z-index: 100;
-  bottom: -35px;
-  right: 315px;
+  bottom: 0;
+  right: 308px;
+  width: 463px;
   height: 612px;
-  max-width: 463px;
   overflow: hidden;
 `;

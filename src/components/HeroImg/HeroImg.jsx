@@ -1,4 +1,3 @@
-// HeroImg.js
 import { getImageObjects } from "./helper";
 import * as s from "./HeroImg.styled";
 
