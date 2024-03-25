@@ -17,7 +17,7 @@ export const SliderBtn = styled.button`
   background-color: transparent;
 
   color: ${staticTheme.colors.txtPrimary};
-  font-family: ${staticTheme.fonts.fontAccent};
+  font-family: ${staticTheme.fonts.fontSecondary};
   font-size: 24px;
   line-height: 125%;
 

@@ -47,7 +47,7 @@ const NavMenu = () => {
           <ModalMenu onClose={toggleMenu} />
         </Modal>
       )}
-      <s.Wrap>
+      <s.BurgerWrap>
         {showMenu && !isMobileView && (
           <BurgerMenu type="header" onClick={toggleMenu} />
         )}
@@ -57,13 +57,9 @@ const NavMenu = () => {
           text={!showMenu ? "Menu" : "Close"}
           onClick={toggleMenu}
         />
-      </s.Wrap>
+      </s.BurgerWrap>
     </>
   );
 };
 
 export default NavMenu;
-
-// onClick={() => toggleMenu()} //!!!!!!!!!!!
-
-// <Button name="menu" type="button" text="Menu" onClick={onClick}></Button>

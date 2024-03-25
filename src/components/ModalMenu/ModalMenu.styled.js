@@ -1,6 +1,4 @@
 import styled from "styled-components";
-// import { staticTheme } from "../../theme";
-// import { Content } from "../Footer/Footer.styled";
 
 export const Container = styled.div`
   position: absolute;
@@ -16,8 +14,3 @@ export const LinksContainer = styled.div`
   align-items: center;
   justify-content: space-between;
 `;
-
-// export const BottomContent = styled(Content)`
-//   /* position: absolute;
-//   bottom: 62px; */
-// `; //!!!!!!!!!

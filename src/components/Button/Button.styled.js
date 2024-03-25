@@ -15,10 +15,6 @@ export const BtnMenu = styled(Btn)`
   min-width: 48px;
   padding: 17px 0;
 
-  border-radius: 8px;
-  background-color: ${staticTheme.colors.bgNavPrimary};
-  backdrop-filter: ${staticTheme.filters.backdrop};
-
   color: ${staticTheme.colors.txtSecondary};
   font-family: ${staticTheme.fonts.fontPrimary};
   font-size: 12px;
@@ -29,13 +25,13 @@ export const BtnMenu = styled(Btn)`
   &:hover {
     color: ${staticTheme.colors.txtPrimary};
     text-decoration: underline;
+    text-decoration-thickness: 0.8px;
+    text-underline-offset: 3px;
   }
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
     min-width: 80px;
     padding: 31px 0;
-
-    border-radius: 12px;
 
     font-size: 16px;
     line-height: calc(19 / 16);
@@ -43,6 +39,7 @@ export const BtnMenu = styled(Btn)`
 `;
 
 export const BtnModal = styled(BtnMenu)`
+  border-radius: 8px;
   background-color: ${staticTheme.colors.bgNavSecondary};
   color: ${staticTheme.colors.txtPrimary};
 

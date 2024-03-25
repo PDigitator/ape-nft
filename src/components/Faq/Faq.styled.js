@@ -92,7 +92,7 @@ export const ListItem = styled.li`
     color: ${staticTheme.colors.txtAccent};
 
     padding-top: 3px;
-    font-family: ${staticTheme.fonts.fontAccent};
+    font-family: ${staticTheme.fonts.fontSecondary};
     font-size: 12px;
     line-height: calc(20 / 12);
 

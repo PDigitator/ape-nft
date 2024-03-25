@@ -13,7 +13,7 @@ const BurgerMenu = ({ onClick, type }) => {
 
   return (
     <s.Nav>
-      <s.List>{renderCards}</s.List>
+      <s.List type={type}>{renderCards}</s.List>
     </s.Nav>
   );
 };

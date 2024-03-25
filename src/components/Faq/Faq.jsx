@@ -17,6 +17,7 @@ const Faq = () => {
       <Card card={card} />
     </s.ListItem>
   ));
+
   return (
     <Section anchorId="faq" title="Faq">
       <ul>{renderCards}</ul>

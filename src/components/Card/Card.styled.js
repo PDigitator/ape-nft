@@ -263,20 +263,6 @@ export const SocialIconWrap = styled.span`
   width: 16px;
   height: 16px;
 
-  /* color: ${(props) =>
-    props.type === "header"
-      ? staticTheme.colors.txtSecondary
-      : staticTheme.colors.txtPrimary};
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: ${(props) =>
-    props.type === "header"
-      ? staticTheme.colors.txtPrimary
-      : staticTheme.colors.txtAccent};
-  } */
-
   @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
     width: 24px;
     height: 24px;
@@ -316,13 +302,20 @@ export const BurgerLink = styled.a`
         : staticTheme.colors.txtAccent};
     text-decoration: ${(props) =>
       props.type === "header" ? "underline" : "none"};
+    text-decoration-thickness: 0.8px;
+    text-underline-offset: 3px;
+  }
+
+  @media screen and (min-width: calc(${staticTheme.breakpoints
+      .mobileMax} - 0.5px)) {
+    border-radius: 0;
+    background-color: transparent;
+    backdrop-filter: none;
   }
 
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
     min-width: 80px;
     padding: 31px 0;
-
-    border-radius: 12px;
 
     font-size: 16px;
     line-height: calc(19 / 16);

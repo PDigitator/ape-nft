@@ -1,6 +1,6 @@
 import * as s from "./Card.styled";
 
-const Card = ({ card, type }) => {
+const Card = ({ card, type, parentHeight }) => {
   switch (card.type) {
     case "text-m-map":
       return (
@@ -39,7 +39,7 @@ const Card = ({ card, type }) => {
     case "faq":
       return (
         <>
-          <s.FaqImgThumb>
+          <s.FaqImgThumb parentHeight={parentHeight}>
             <s.Image
               srcSet={`${card.url} 1x, ${card.url.replace(
                 "@1x.jpg",
