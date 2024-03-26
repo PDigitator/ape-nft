@@ -31,7 +31,7 @@ const Hero = () => {
             <s.TitleContainer>
               <s.TopTxt>diD yOu seE iT ?</s.TopTxt>
               <s.Title>Yacht Apes</s.Title>
-              <s.TopTxt type="second">diD yOu seE iT ?</s.TopTxt>
+              <s.TopTxt type="second">Apes aRe eveRywhere</s.TopTxt>
             </s.TitleContainer>
             {isDesktopView && <HeroImg />}
             <s.BotoomConteiner>
