@@ -9,34 +9,61 @@ export const BgrWrap = styled.div`
   border-radius: 8px;
   background-color: ${staticTheme.colors.bgAccent};
 
-  background-image: url(${(props) =>
-    props.srcMobile1x.replace(".png", ".webp")});
-  background-position: bottom 110px center;
   background-repeat: no-repeat;
   background-size: 216px 284px;
+  background-position: bottom 110px center;
+
+  background-image: url(${(props) => props.srcMobile1x});
+
+  @supports (
+    background-image:
+      url(${(props) => props.srcMobile1x.replace(".png", ".webp")})
+  ) {
+    background-image: url(${(props) =>
+      props.srcMobile1x.replace(".png", ".webp")});
+  }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(${(props) =>
-      props.srcMobile2x.replace(".png", ".webp")});
+    background-image: url(${(props) => props.srcMobile2x});
+    @supports (
+      background-image:
+        url(${(props) => props.srcMobile2x.replace(".png", ".webp")})
+    ) {
+      background-image: url(${(props) =>
+        props.srcMobile2x.replace(".png", ".webp")});
+    }
   }
 
   @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {
     min-height: 421px;
     padding: 35px 72px;
     border-radius: 16px;
-
-    background-image: url(${(props) =>
-      props.srcTablet1x.replace(".png", ".webp")});
     background-size: 283px 386px;
     background-position: calc(50% - 20px) bottom;
+
+    background-image: url(${(props) => props.srcTablet1x});
+
+    @supports (
+      background-image:
+        url(${(props) => props.srcTablet1x.replace(".png", ".webp")})
+    ) {
+      background-image: url(${(props) =>
+        props.srcTablet1x.replace(".png", ".webp")});
+    }
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(${(props) =>
-        props.srcTablet2x.replace(".png", ".webp")});
+      background-image: url(${(props) => props.srcTablet2x});
+      @supports (
+        background-image:
+          url(${(props) => props.srcTablet2x.replace(".png", ".webp")})
+      ) {
+        background-image: url(${(props) =>
+          props.srcTablet2x.replace(".png", ".webp")});
+      }
     }
   }
 
