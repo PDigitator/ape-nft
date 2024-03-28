@@ -59,7 +59,7 @@ export const ContentWrap = styled.div`
 
 export const TitleContainer = styled.div``;
 
-export const TopTxt = styled.h3`
+export const TopTxt = styled.p`
   color: ${staticTheme.colors.txtSecondary};
   font-family: ${staticTheme.fonts.fontAccent};
   font-size: 16px;

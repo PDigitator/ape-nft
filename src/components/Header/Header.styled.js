@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { staticTheme } from "../../theme";
 
 export const HeaderWrap = styled.header`
+  /* position: fixed;
+  top: 0; */ //!TODO: for scroll
+
   position: absolute;
   left: 0;
   right: 0;

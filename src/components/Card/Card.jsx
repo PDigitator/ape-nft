@@ -32,6 +32,8 @@ const Card = ({ card, type, parentHeight }) => {
             )} 2x`}
             src={card.url}
             alt={card.alt}
+            height="100%"
+            width="100%"
           />
         </s.ImgThumb>
       );
