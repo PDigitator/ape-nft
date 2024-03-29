@@ -1,4 +1,4 @@
-import { getImageObjects } from "./helper";
+import { getImageObjects } from "./helperAboutBgr";
 import * as s from "./AboutBgr.styled";
 
 const AboutBgr = ({ children }) => {

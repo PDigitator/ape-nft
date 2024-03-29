@@ -1,4 +1,4 @@
-import { getImageObjects } from "./helper";
+import { getImageObjects } from "./helperHeroImg";
 import * as s from "./HeroImg.styled";
 
 const HeroImg = () => {

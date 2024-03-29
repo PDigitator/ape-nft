@@ -1,4 +1,4 @@
-import { getImageObjects } from "./helper";
+import { getImageObjects } from "./helperHeroBgr";
 import * as s from "./HeroBgr.styled";
 
 const HeroBgr = ({ children }) => {
