@@ -7,16 +7,8 @@
   ],
   "routes": [
     {
-      "src": "/(.*)\\.webp",
-      "headers": [{ "key": "Content-Type", "value": "image/webp" }]
-    },
-    {
-      "src": "/(.*)\\.png",
-      "headers": [{ "key": "Content-Type", "value": "image/png" }]
-    },
-    {
-      "src": "/(.*)\\.jpg",
-      "headers": [{ "key": "Content-Type", "value": "image/jpeg" }]
+      "src": "/(.*\\.(js|css|png|jpg|gif|svg|woff2?|eot|ttf|otf))$",
+      "dest": "/$1"
     }
   ]
 }
