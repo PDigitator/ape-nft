@@ -5,15 +5,15 @@
       "destination": "/index.html"
     },
     {
-      "source": "/assets/images/(.*)\\.webp",
+      "source": "/assets/(.*)\\.webp",
       "headers": [{ "key": "Content-Type", "value": "image/webp" }]
     },
     {
-      "source": "/assets/images/(.*)\\.png",
+      "source": "/assets/(.*)\\.png",
       "headers": [{ "key": "Content-Type", "value": "image/png" }]
     },
     {
-      "source": "/assets/images/(.*)\\.jpg",
+      "source": "/assets/(.*)\\.jpg",
       "headers": [{ "key": "Content-Type", "value": "image/jpeg" }]
     }
   ]
