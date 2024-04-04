@@ -3,6 +3,18 @@
     {
       "source": "/(.*)",
       "destination": "/index.html"
+    },
+    {
+      "source": "/assets/images/(.*)\\.webp",
+      "headers": [{ "key": "Content-Type", "value": "image/webp" }]
+    },
+    {
+      "source": "/assets/images/(.*)\\.png",
+      "headers": [{ "key": "Content-Type", "value": "image/png" }]
+    },
+    {
+      "source": "/assets/images/(.*)\\.jpg",
+      "headers": [{ "key": "Content-Type", "value": "image/jpeg" }]
     }
   ]
 }
