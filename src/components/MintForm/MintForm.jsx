@@ -4,8 +4,8 @@ import { Report } from "notiflix/build/notiflix-report-aio";
 
 import { initialValues, schemas } from "./helperMintForm.js";
 import Button from "../Button";
-import DiscordIcon from "/public/assets/icons/discord.svg?react";
-import MetaMaskIcon from "/public/assets/icons/metamask.svg?react";
+import DiscordIcon from "../../assets/icons/discord.svg?react";
+import MetaMaskIcon from "../../assets/icons/metamask.svg?react";
 import * as s from "./MintForm.styled";
 
 const MintForm = () => {

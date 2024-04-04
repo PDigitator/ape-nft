@@ -1,6 +1,6 @@
 import Section from "../Section";
 import MintForm from "../MintForm";
-import CrossIcon from "/public/assets/icons/cross.svg?react";
+import CrossIcon from "../../assets/icons/cross.svg?react";
 import * as s from "./Mint.styled";
 
 const Mint = () => {

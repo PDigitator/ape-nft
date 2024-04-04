@@ -1,8 +1,8 @@
 import { nanoid } from "nanoid";
-import card01 from "/public/assets/images/faq-img/ape-faq-01@1x.jpg";
-import card02 from "/public/assets/images/faq-img/ape-faq-02@1x.jpg";
-import card03 from "/public/assets/images/faq-img/ape-faq-03@1x.jpg";
-import card04 from "/public/assets/images/faq-img/ape-faq-04@1x.jpg";
+import card01 from "../assets/images/faq-img/ape-faq-01@1x.jpg";
+import card02 from "../assets/images/faq-img/ape-faq-02@1x.jpg";
+import card03 from "../assets/images/faq-img/ape-faq-03@1x.jpg";
+import card04 from "../assets/images/faq-img/ape-faq-04@1x.jpg";
 
 export const cardsFaqData = [
   {

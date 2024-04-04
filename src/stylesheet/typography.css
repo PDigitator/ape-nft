@@ -6,15 +6,15 @@
   font-family: "Biro Script Plus";
   font-style: normal;
   font-weight: 700;
-  src: url("/public/assets/fonts/BiroScriptPlus-Bold.eot"); /* IE9 Compat Modes */
-  src: url("/public/assets/fonts/BiroScriptPlus-Bold.eot?#iefix")
+  src: url("../assets/fonts/BiroScriptPlus-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/BiroScriptPlus-Bold.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-IE8 */ url("/public/assets/fonts/BiroScriptPlus-Bold.woff2")
+    /* IE6-IE8 */ url("../assets/fonts/BiroScriptPlus-Bold.woff2")
       format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url("/public/assets/fonts/BiroScriptPlus-Bold.woff") format("woff"),
+      url("../assets/fonts/BiroScriptPlus-Bold.woff") format("woff"),
     /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-      url("/public/assets/fonts/BiroScriptPlus-Bold.ttf") format("truetype");
+      url("../assets/fonts/BiroScriptPlus-Bold.ttf") format("truetype");
   /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
@@ -24,15 +24,15 @@
   font-family: "Biro Script Plus US";
   font-style: normal;
   font-weight: 700;
-  src: url("/public/assets/fonts/BiroScriptUSPlus-Bold.eot"); /* IE9 Compat Modes */
-  src: url("/public/assets/fonts/BiroScriptUSPlus-Bold.eot?#iefix")
+  src: url("../assets/fonts/BiroScriptUSPlus-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/BiroScriptUSPlus-Bold.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-IE8 */ url("/public/assets/fonts/BiroScriptUSPlus-Bold.woff2")
+    /* IE6-IE8 */ url("../assets/fonts/BiroScriptUSPlus-Bold.woff2")
       format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url("/public/assets/fonts/BiroScriptUSPlus-Bold.woff") format("woff"),
+      url("../assets/fonts/BiroScriptUSPlus-Bold.woff") format("woff"),
     /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-      url("/public/assets/fonts/BiroScriptUSPlus-Bold.ttf") format("truetype");
+      url("../assets/fonts/BiroScriptUSPlus-Bold.ttf") format("truetype");
   /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
@@ -42,15 +42,15 @@
   font-family: "Messina Sans Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("/public/assets/fonts/MessinaSansMono-Regular.eot"); /* IE9 Compat Modes */
-  src: url("/public/assets/fonts/MessinaSansMono-Regular.eot?#iefix")
+  src: url("../assets/fonts/MessinaSansMono-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/MessinaSansMono-Regular.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-IE8 */ url("/public/assets/fonts/MessinaSansMono-Regular.woff2")
+    /* IE6-IE8 */ url("../assets/fonts/MessinaSansMono-Regular.woff2")
       format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url("/public/assets/fonts/MessinaSansMono-Regular.woff") format("woff"),
+      url("../assets/fonts/MessinaSansMono-Regular.woff") format("woff"),
     /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-      url("/public/assets/fonts/MessinaSansMono-Regular.ttf") format("truetype");
+      url("../assets/fonts/MessinaSansMono-Regular.ttf") format("truetype");
   /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
@@ -60,16 +60,15 @@
   font-family: "Messina Sans Mono";
   font-style: normal;
   font-weight: 600;
-  src: url("/public/assets/fonts/MessinaSansMono-SemiBold.eot"); /* IE9 Compat Modes */
-  src: url("/public/assets/fonts/MessinaSansMono-SemiBold.eot?#iefix")
+  src: url("../assets/fonts/MessinaSansMono-SemiBold.eot"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/MessinaSansMono-SemiBold.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-IE8 */ url("/public/assets/fonts/MessinaSansMono-SemiBold.woff2")
+    /* IE6-IE8 */ url("../assets/fonts/MessinaSansMono-SemiBold.woff2")
       format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url("/public/assets/fonts/MessinaSansMono-SemiBold.woff") format("woff"),
+      url("../assets/fonts/MessinaSansMono-SemiBold.woff") format("woff"),
     /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-      url("/public/assets/fonts/MessinaSansMono-SemiBold.ttf")
-      format("truetype");
+      url("../assets/fonts/MessinaSansMono-SemiBold.ttf") format("truetype");
   /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
@@ -79,15 +78,14 @@
   font-family: "Right Grotesk";
   font-style: normal;
   font-weight: 900;
-  src: url("/public/assets/fonts/RightGrotesk-CompactBlack.eot"); /* IE9 Compat Modes */
-  src: url("/public/assets/fonts/RightGrotesk-CompactBlack.eot?#iefix")
+  src: url("../assets/fonts/RightGrotesk-CompactBlack.eot"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/RightGrotesk-CompactBlack.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-IE8 */ url("/public/assets/fonts/RightGrotesk-CompactBlack.woff2")
+    /* IE6-IE8 */ url("../assets/fonts/RightGrotesk-CompactBlack.woff2")
       format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url("/public/assets/fonts/RightGrotesk-CompactBlack.woff") format("woff"),
+      url("../assets/fonts/RightGrotesk-CompactBlack.woff") format("woff"),
     /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-      url("/public/assets/fonts/RightGrotesk-CompactBlack.ttf")
-      format("truetype");
+      url("../assets/fonts/RightGrotesk-CompactBlack.ttf") format("truetype");
   /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }

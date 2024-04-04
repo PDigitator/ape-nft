@@ -1,7 +1,7 @@
 import Section from "../Section";
 import AboutBgr from "../AboutBgr";
 import RunningString from "../RunningString";
-import CrossIcon from "/public/assets/icons/cross.svg?react";
+import CrossIcon from "../../assets/icons/cross.svg?react";
 import * as s from "./About.styled";
 
 const About = () => {

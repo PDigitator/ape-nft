@@ -8,7 +8,7 @@ export const HeaderWrap = styled.header`
   position: absolute;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 200;
   padding: 62px 0;
 
   @media screen and (min-width: ${staticTheme.breakpoints.tablet}) {

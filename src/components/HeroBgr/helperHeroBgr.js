@@ -1,11 +1,11 @@
-import ImgMob1x from "/public/assets/images/hero-img/ape-hero-mobile@1x.png";
-import ImgMobWebp1x from "/public/assets/images/hero-img/ape-hero-mobile@1x.webp";
-import ImgMob2x from "/public/assets/images/hero-img/ape-hero-mobile@2x.png";
-import ImgMobWebp2x from "/public/assets/images/hero-img/ape-hero-mobile@2x.webp";
-import ImgTab1x from "/public/assets/images/hero-img/ape-hero-tablet@1x.png";
-import ImgTabWebp1x from "/public/assets/images/hero-img/ape-hero-tablet@1x.webp";
-import ImgTab2x from "/public/assets/images/hero-img/ape-hero-tablet@2x.png";
-import ImgTabWebp2x from "/public/assets/images/hero-img/ape-hero-tablet@2x.webp";
+import ImgMob1x from "../../assets/images/hero-img/ape-hero-mobile@1x.png";
+import ImgMobWebp1x from "../../assets/images/hero-img/ape-hero-mobile@1x.webp";
+import ImgMob2x from "../../assets/images/hero-img/ape-hero-mobile@2x.png";
+import ImgMobWebp2x from "../../assets/images/hero-img/ape-hero-mobile@2x.webp";
+import ImgTab1x from "../../assets/images/hero-img/ape-hero-tablet@1x.png";
+import ImgTabWebp1x from "../../assets/images/hero-img/ape-hero-tablet@1x.webp";
+import ImgTab2x from "../../assets/images/hero-img/ape-hero-tablet@2x.png";
+import ImgTabWebp2x from "../../assets/images/hero-img/ape-hero-tablet@2x.webp";
 
 export const getImageObjects = () => {
   return {

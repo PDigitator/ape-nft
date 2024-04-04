@@ -1,7 +1,7 @@
-import Image1x from "/public/assets/images/hero-img/ape-hero-desktop@1x.png";
-import Image2x from "/public/assets/images/hero-img/ape-hero-desktop@2x.png";
-import Image1xWebp from "/public/assets/images/hero-img/ape-hero-desktop@1x.webp";
-import Image2xWebp from "/public/assets/images/hero-img/ape-hero-desktop@2x.webp";
+import Image1x from "../../assets/images/hero-img/ape-hero-desktop@1x.png";
+import Image2x from "../../assets/images/hero-img/ape-hero-desktop@2x.png";
+import Image1xWebp from "../../assets/images/hero-img/ape-hero-desktop@1x.webp";
+import Image2xWebp from "../../assets/images/hero-img/ape-hero-desktop@2x.webp";
 
 export const getImageObjects = () => {
   return {
