@@ -1,4 +1,4 @@
-import LogoIcon from "../../assets/icons/logo.svg?react";
+import LogoIcon from "/src/assets/icons/logo.svg?react";
 import * as s from "./Logo.styled";
 
 const Logo = ({ type }) => {

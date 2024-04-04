@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid";
-import DiscordIcon from "../assets/icons/discord.svg?react";
-import OpenseaIcon from "../assets/icons/opensea.svg?react";
-import TwitterIcon from "../assets/icons/x-twitter.svg?react";
+import DiscordIcon from "/src/assets/icons/discord.svg?react";
+import OpenseaIcon from "/src/assets/icons/opensea.svg?react";
+import TwitterIcon from "/src/assets/icons/x-twitter.svg?react";
 
 export const cardsSocialData = [
   {

@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import ArrowIcon from "../assets/icons/up-right-arrow.svg?react";
+import ArrowIcon from "/src/assets/icons/up-right-arrow.svg?react";
 
 export const cardsMindMapData = [
   {

@@ -1,18 +1,27 @@
 {
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/" },
+  "rewrites": [
     {
-      "src": "/assets/(.*\\.webp)",
-      "headers": { "key": "Content-Type", "value": "image/webp" }
-    },
-    {
-      "src": "/assets/(.*\\.png)",
-      "headers": { "key": "Content-Type", "value": "image/png" }
-    },
-    {
-      "src": "/assets/(.*\\.jpg)",
-      "headers": { "key": "Content-Type", "value": "image/jpeg" }
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
+
+// {
+//   "routes": [
+//     { "handle": "filesystem" },
+//     { "src": "/(.*)", "dest": "/" },
+//     {
+//       "src": "/src/assets/(.*\\.webp)",
+//       "headers": { "key": "Content-Type", "value": "image/webp" }
+//     },
+//     {
+//       "src": "/src/assets/(.*\\.png)",
+//       "headers": { "key": "Content-Type", "value": "image/png" }
+//     },
+//     {
+//       "src": "/src/assets/(.*\\.jpg)",
+//       "headers": { "key": "Content-Type", "value": "image/jpeg" }
+//     }
+//   ]
+// }
