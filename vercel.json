@@ -1,18 +1,18 @@
 {
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" },
+    { "src": "/(.*)", "dest": "/" },
     {
       "src": "/assets/(.*\\.webp)",
-      "headers": [{ "key": "Content-Type", "value": "image/webp" }]
+      "headers": { "key": "Content-Type", "value": "image/webp" }
     },
     {
       "src": "/assets/(.*\\.png)",
-      "headers": [{ "key": "Content-Type", "value": "image/png" }]
+      "headers": { "key": "Content-Type", "value": "image/png" }
     },
     {
       "src": "/assets/(.*\\.jpg)",
-      "headers": [{ "key": "Content-Type", "value": "image/jpeg" }]
+      "headers": { "key": "Content-Type", "value": "image/jpeg" }
     }
   ]
 }
