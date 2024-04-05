@@ -5,8 +5,7 @@
       "destination": "/index.html"
     }
   ],
-  "images": {
-    "sizes": [256, 640, 1080, 2048, 3840],
-    "formats": ["image/webp"]
+  "mimeMap": {
+    "webp": "image/webp"
   }
 }
