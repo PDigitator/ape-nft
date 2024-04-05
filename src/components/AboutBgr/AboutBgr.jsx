@@ -6,16 +6,13 @@ const AboutBgr = ({ children }) => {
 
   return (
     <s.BgrWrap
-      // src={imageObjects.mobile["@1x"].png}
-      // srcMobile1x={imageObjects.mobile["@1x"].png}
-      // srcMobile2x={imageObjects.mobile["@2x"].png}
-      // srcTablet1x={imageObjects.tablet["@1x"].png}
-      // srcTablet2x={imageObjects.tablet["@2x"].png}
-      // srcDesktop1x={imageObjects.desktop["@1x"].png}
-      // srcDesktop2x={imageObjects.desktop["@2x"].png}
-      style={{
-        backgroundImage: `url("${imageObjects.desktop["@1x"].webp}")`,
-      }}
+      src={imageObjects.mobile["@1x"].png}
+      srcMobile1x={imageObjects.mobile["@1x"].png}
+      srcMobile2x={imageObjects.mobile["@2x"].png}
+      srcTablet1x={imageObjects.tablet["@1x"].png}
+      srcTablet2x={imageObjects.tablet["@2x"].png}
+      srcDesktop1x={imageObjects.desktop["@1x"].png}
+      srcDesktop2x={imageObjects.desktop["@2x"].png}
     >
       {children}
     </s.BgrWrap>
