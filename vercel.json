@@ -6,6 +6,7 @@
     }
   ],
   "images": {
+    "sizes": ["1x", "2x"],
     "formats": ["image/webp"]
   }
 }
