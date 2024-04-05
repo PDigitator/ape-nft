@@ -12,7 +12,7 @@ export const BgrWrap = styled.div`
   background-position: bottom right;
   background-size: 216px 292px;
 
-  background-image: url(${(props) => props.srcMobile1x});
+  background-image: url("/src/assets/images/about-img/ape-about-mobile@1x.webp");
 
   @supports (
     background-image:
@@ -46,7 +46,7 @@ export const BgrWrap = styled.div`
 
     background-size: 313px 422px;
 
-    background-image: url(${(props) => props.srcTablet1x});
+    background-image: url("/src/assets/images/about-img/ape-about-tablet@1x.webp");
 
     @supports (
       background-image:
@@ -76,7 +76,7 @@ export const BgrWrap = styled.div`
 
     background-size: 492px 662px;
 
-    background-image: url(${(props) => props.srcDesktop1x});
+    background-image: url("/src/assets/images/about-img/ape-about-desktop@1x.webp");
 
     @supports (
       background-image:
