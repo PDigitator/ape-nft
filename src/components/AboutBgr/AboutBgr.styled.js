@@ -76,6 +76,33 @@ export const BgrWrap = styled.div`
 
     background-size: 492px 662px;
 
+    background-image: url("/src/assets/images/about-img/ape-about-desktop@1x.png");
+
+    @supports (
+      background-image:
+        url("/src/assets/images/about-img/ape-about-desktop@1x.webp")
+    ) {
+      background-image: url("/src/assets/images/about-img/ape-about-desktop@1x.webp");
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("/src/assets/images/about-img/ape-about-desktop@2x.png");
+      @supports (
+        background-image:
+          url("/src/assets/images/about-img/ape-about-desktop@2x.webp")
+      ) {
+        background-image: url("/src/assets/images/about-img/ape-about-desktop@2x.webp");
+      }
+    }
+  }
+  /* @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
+    padding-bottom: 40px;
+    gap: 56px;
+
+    background-size: 492px 662px;
+
     background-image: url(${(props) => props.srcDesktop1x});
 
     @supports (
@@ -83,7 +110,7 @@ export const BgrWrap = styled.div`
         url(${(props) => props.srcDesktop1x.replace(".png", ".webp")})
     ) {
       background-image: url(${(props) =>
-        props.srcDesktop1x.replace(".png", ".webp")});
+    props.srcDesktop1x.replace(".png", ".webp")});
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -95,8 +122,8 @@ export const BgrWrap = styled.div`
           url(${(props) => props.srcDesktop2x.replace(".png", ".webp")})
       ) {
         background-image: url(${(props) =>
-          props.srcDesktop2x.replace(".png", ".webp")});
+    props.srcDesktop2x.replace(".png", ".webp")});
       }
     }
-  }
+  } */
 `;
