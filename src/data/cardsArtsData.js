@@ -1,18 +1,18 @@
 import { nanoid } from "nanoid";
-import card02 from "/src/assets/images/slider-img/ape-slider-02@1x.jpg";
-import card01 from "/src/assets/images/slider-img/ape-slider-01@1x.jpg";
-import card03 from "/src/assets/images/slider-img/ape-slider-03@1x.jpg";
-import card04 from "/src/assets/images/slider-img/ape-slider-04@1x.jpg";
-import card05 from "/src/assets/images/slider-img/ape-slider-05@1x.jpg";
-import card06 from "/src/assets/images/slider-img/ape-slider-06@1x.jpg";
-import card07 from "/src/assets/images/slider-img/ape-slider-07@1x.jpg";
-import card08 from "/src/assets/images/slider-img/ape-slider-08@1x.jpg";
-import card09 from "/src/assets/images/slider-img/ape-slider-09@1x.jpg";
-import card10 from "/src/assets/images/slider-img/ape-slider-10@1x.jpg";
-import card11 from "/src/assets/images/slider-img/ape-slider-11@1x.jpg";
-import card12 from "/src/assets/images/slider-img/ape-slider-12@1x.jpg";
-import card13 from "/src/assets/images/slider-img/ape-slider-13@1x.jpg";
-import card14 from "/src/assets/images/slider-img/ape-slider-14@1x.jpg";
+import card02 from "/images/slider-img/ape-slider-02@1x.jpg";
+import card01 from "/images/slider-img/ape-slider-01@1x.jpg";
+import card03 from "/images/slider-img/ape-slider-03@1x.jpg";
+import card04 from "/images/slider-img/ape-slider-04@1x.jpg";
+import card05 from "/images/slider-img/ape-slider-05@1x.jpg";
+import card06 from "/images/slider-img/ape-slider-06@1x.jpg";
+import card07 from "/images/slider-img/ape-slider-07@1x.jpg";
+import card08 from "/images/slider-img/ape-slider-08@1x.jpg";
+import card09 from "/images/slider-img/ape-slider-09@1x.jpg";
+import card10 from "/images/slider-img/ape-slider-10@1x.jpg";
+import card11 from "/images/slider-img/ape-slider-11@1x.jpg";
+import card12 from "/images/slider-img/ape-slider-12@1x.jpg";
+import card13 from "/images/slider-img/ape-slider-13@1x.jpg";
+import card14 from "/images/slider-img/ape-slider-14@1x.jpg";
 
 export const cardsArtsData = [
   {
