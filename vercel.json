@@ -6,7 +6,7 @@
     }
   ],
   "images": {
-    "sizes": ["1x", "2x"],
+    "sizes": [256, 640, 1080, 2048, 3840],
     "formats": ["image/webp"]
   }
 }
