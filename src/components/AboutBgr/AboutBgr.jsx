@@ -1,8 +1,8 @@
-// import { getImageObjects } from "./helperAboutBgr";
+import { getImageObjects } from "./helperAboutBgr";
 import * as s from "./AboutBgr.styled";
 
 const AboutBgr = ({ children }) => {
-  // const imageObjects = getImageObjects();
+  const imageObjects = getImageObjects();
 
   return (
     <s.BgrWrap
@@ -14,7 +14,7 @@ const AboutBgr = ({ children }) => {
       // srcDesktop1x={imageObjects.desktop["@1x"].png}
       // srcDesktop2x={imageObjects.desktop["@2x"].png}
       style={{
-        backgroundImage: `url("/src/assets/images/about-img/ape-about-desktop@1x.webp"`,
+        backgroundImage: `url("${imageObjects.desktop["@1x"].webp}")`,
       }}
     >
       {children}
