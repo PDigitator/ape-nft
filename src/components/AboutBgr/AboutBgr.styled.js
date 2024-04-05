@@ -12,7 +12,7 @@ export const BgrWrap = styled.div`
   background-position: bottom right;
   background-size: 216px 292px;
 
-  background-image: url(${(props) => props.srcMobile1x});
+  background-image: url("${(props) => props.srcMobile1x}");
 
   @supports (
     background-image:
@@ -28,7 +28,7 @@ export const BgrWrap = styled.div`
     background-image: url(${(props) => props.srcMobile2x});
     @supports (
       background-image:
-        url(${(props) => props.srcMobile2x.replace(".png", ".webp")})
+        url("${(props) => props.srcMobile2x.replace(".png", ".webp")}")
     ) {
       background-image: url(${(props) =>
         props.srcMobile2x.replace(".png", ".webp")});
@@ -50,7 +50,7 @@ export const BgrWrap = styled.div`
 
     @supports (
       background-image:
-        url(${(props) => props.srcTablet1x.replace(".png", ".webp")})
+        url("${(props) => props.srcTablet1x.replace(".png", ".webp")}")
     ) {
       background-image: url(${(props) =>
         props.srcTablet1x.replace(".png", ".webp")});
@@ -59,10 +59,10 @@ export const BgrWrap = styled.div`
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(${(props) => props.srcTablet2x});
+      background-image: url("${(props) => props.srcTablet2x}");
       @supports (
         background-image:
-          url(${(props) => props.srcTablet2x.replace(".png", ".webp")})
+          url("${(props) => props.srcTablet2x.replace(".png", ".webp")}")
       ) {
         background-image: url(${(props) =>
           props.srcTablet2x.replace(".png", ".webp")});
@@ -80,7 +80,7 @@ export const BgrWrap = styled.div`
 
     @supports (
       background-image:
-        url(${(props) => props.srcDesktop1x.replace(".png", ".webp")})
+        url("${(props) => props.srcDesktop1x.replace(".png", ".webp")}")
     ) {
       background-image: url(${(props) =>
         props.srcDesktop1x.replace(".png", ".webp")});
@@ -92,7 +92,7 @@ export const BgrWrap = styled.div`
       background-image: url(${(props) => props.srcDesktop2x});
       @supports (
         background-image:
-          url(${(props) => props.srcDesktop2x.replace(".png", ".webp")})
+          url("${(props) => props.srcDesktop2x.replace(".png", ".webp")}")
       ) {
         background-image: url(${(props) =>
           props.srcDesktop2x.replace(".png", ".webp")});

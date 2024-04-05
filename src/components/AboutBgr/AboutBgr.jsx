@@ -13,6 +13,9 @@ const AboutBgr = ({ children }) => {
       srcTablet2x={imageObjects.tablet["@2x"].png}
       srcDesktop1x={imageObjects.desktop["@1x"].png}
       srcDesktop2x={imageObjects.desktop["@2x"].png}
+      // style={{
+      //   backgroundImage: `url("${imageObjects.desktop["@1x"].webp}")`,
+      // }}
     >
       {children}
     </s.BgrWrap>
