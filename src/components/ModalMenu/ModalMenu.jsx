@@ -13,9 +13,9 @@ const ModalMenu = ({ onClose }) => {
           <Logo />
           <Button name="modal" type="button" text="Close" onClick={onClose} />
         </s.LinksContainer>
-        <SocialMenu type="modal" />
+        <SocialMenu kind="modal" />
       </s.Container>
-      <BurgerMenu type="modal" onClick={onClose} />
+      <BurgerMenu kind="modal" onClick={onClose} />
       <Content>{"\u00A9"} Yacht ape 2024 all rights reserved</Content>
     </>
   );

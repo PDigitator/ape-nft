@@ -1,7 +1,7 @@
 import * as s from "./Card.styled";
 
-const Card = ({ card, type, parentHeight }) => {
-  switch (card.type) {
+const Card = ({ card, kind, parentHeight }) => {
+  switch (card.kind) {
     case "text-m-map":
       return (
         <s.TxtThumb>
@@ -64,7 +64,7 @@ const Card = ({ card, type, parentHeight }) => {
           href={card.url}
           rel="noopener noreferrer nofollow"
           aria-label={card.ariaLabel}
-          type={type}
+          kind={kind}
         >
           <s.SocialIconWrap>{card.icon()}</s.SocialIconWrap>
         </s.SocialLink>
@@ -72,7 +72,7 @@ const Card = ({ card, type, parentHeight }) => {
 
     case "burger":
       return (
-        <s.BurgerLink href={card.url} aria-label={card.ariaLabel} type={type}>
+        <s.BurgerLink href={card.url} aria-label={card.ariaLabel} kind={kind}>
           {card.description}
         </s.BurgerLink>
       );

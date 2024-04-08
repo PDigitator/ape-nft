@@ -49,7 +49,7 @@ const NavMenu = () => {
       )}
       <s.BurgerWrap>
         {showMenu && !isMobileView && (
-          <BurgerMenu type="header" onClick={toggleMenu} />
+          <BurgerMenu kind="header" onClick={toggleMenu} />
         )}
         <Button
           name="menu"
