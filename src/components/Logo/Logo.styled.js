@@ -7,7 +7,7 @@ export const LogoWrap = styled.span`
   height: 32px;
 
   color: ${(props) =>
-    props.kind === "header"
+    props.variant === "header"
       ? staticTheme.colors.txtSecondary
       : staticTheme.colors.txtPrimary};
 
@@ -15,7 +15,7 @@ export const LogoWrap = styled.span`
   &:focus,
   &:active {
     color: ${(props) =>
-      props.kind === "header"
+      props.variant === "header"
         ? staticTheme.colors.txtPrimary
         : staticTheme.colors.txtAccent};
   }

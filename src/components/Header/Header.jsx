@@ -8,10 +8,10 @@ const Header = () => {
     <s.HeaderWrap>
       <s.HeaderContainer>
         <s.Wrap>
-          <Logo kind="header" />
+          <Logo variant="header" />
           <NavMenu />
         </s.Wrap>
-        <SocialMenu kind="header" />
+        <SocialMenu variant="header" />
       </s.HeaderContainer>
     </s.HeaderWrap>
   );

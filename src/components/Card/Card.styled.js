@@ -227,14 +227,14 @@ export const SocialLink = styled.a`
   height: 48px;
   border-radius: 8px;
   background-color: ${(props) =>
-    props.kind === "header"
+    props.variant === "header"
       ? staticTheme.colors.bgNavPrimary
       : staticTheme.colors.bgNavSecondary};
 
   backdrop-filter: ${staticTheme.filters.backdrop};
 
   color: ${(props) =>
-    props.kind === "header"
+    props.variant === "header"
       ? staticTheme.colors.txtSecondary
       : staticTheme.colors.txtPrimary};
 
@@ -242,7 +242,7 @@ export const SocialLink = styled.a`
   &:focus,
   &:active {
     color: ${(props) =>
-      props.kind === "header"
+      props.variant === "header"
         ? staticTheme.colors.txtPrimary
         : staticTheme.colors.txtAccent};
   }
@@ -268,23 +268,25 @@ export const SocialIconWrap = styled.span`
 
 export const BurgerLink = styled.a`
   display: block;
-  min-width: ${(props) => (props.kind === "header" ? "48px" : "120px")};
-  padding: ${(props) => (props.kind === "header" ? "17px 0" : "0")};
+  min-width: ${(props) => (props.variant === "header" ? "48px" : "120px")};
+  padding: ${(props) => (props.variant === "header" ? "17px 0" : "0")};
 
   border-radius: 8px;
   background-color: ${(props) =>
-    props.kind === "header" ? staticTheme.colors.bgNavPrimary : "transparent"};
+    props.variant === "header"
+      ? staticTheme.colors.bgNavPrimary
+      : "transparent"};
   backdrop-filter: ${staticTheme.filters.backdrop};
 
   color: ${(props) =>
-    props.kind === "header"
+    props.variant === "header"
       ? staticTheme.colors.txtSecondary
       : staticTheme.colors.txtPrimary};
   font-family: ${staticTheme.fonts.fontPrimary};
 
-  font-size: ${(props) => (props.kind === "header" ? "12px" : "24px")};
+  font-size: ${(props) => (props.variant === "header" ? "12px" : "24px")};
   line-height: ${(props) =>
-    props.kind === "header" ? "calc(14 / 12)" : "calc(29 / 24)"};
+    props.variant === "header" ? "calc(14 / 12)" : "calc(29 / 24)"};
 
   font-weight: 600;
   text-transform: uppercase;
@@ -294,11 +296,11 @@ export const BurgerLink = styled.a`
   &:focus,
   &:active {
     color: ${(props) =>
-      props.kind === "header"
+      props.variant === "header"
         ? staticTheme.colors.txtPrimary
         : staticTheme.colors.txtAccent};
     text-decoration: ${(props) =>
-      props.kind === "header" ? "underline" : "none"};
+      props.variant === "header" ? "underline" : "none"};
     text-decoration-thickness: 0.8px;
     text-underline-offset: 3px;
   }

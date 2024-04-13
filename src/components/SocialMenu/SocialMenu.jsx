@@ -2,12 +2,12 @@ import Card from "../Card";
 import { cardsSocialData } from "../../data/cardsSocialData";
 import * as s from "./SocialMenu.styled";
 
-const SocialMenu = ({ kind }) => {
+const SocialMenu = ({ variant }) => {
   const cardsData = [...cardsSocialData];
 
   const renderCards = cardsData.map((card) => (
     <li key={card.id}>
-      <Card card={card} kind={kind} />
+      <Card card={card} variant={variant} />
     </li>
   ));
 

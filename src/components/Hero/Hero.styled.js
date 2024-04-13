@@ -75,7 +75,7 @@ export const TopTxt = styled.p`
   @media screen and (min-width: ${staticTheme.breakpoints.desktop}) {
     font-size: 24px;
     line-height: calc(40 / 24);
-    text-indent: ${(props) => (props.kind === "second" ? "120px" : "0")};
+    text-indent: ${(props) => (props.variant === "second" ? "120px" : "0")};
   }
 `;
 

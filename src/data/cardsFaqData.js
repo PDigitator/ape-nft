@@ -7,7 +7,7 @@ import card04 from "/images/faq-img/ape-faq-04@1x.jpg";
 export const cardsFaqData = [
   {
     id: nanoid(),
-    kind: "faq",
+    variant: "faq",
     url: card01,
     alt: "Card 1",
     subTitle: "What is an nft collection?",
@@ -16,7 +16,7 @@ export const cardsFaqData = [
   },
   {
     id: nanoid(),
-    kind: "faq",
+    variant: "faq",
     url: card02,
     alt: "Card 2",
     subTitle: "How do i purchase nfts from a collection?",
@@ -25,7 +25,7 @@ export const cardsFaqData = [
   },
   {
     id: nanoid(),
-    kind: "faq",
+    variant: "faq",
     url: card03,
     alt: "Card 3",
     subTitle: "Can i sell or trade nfts from a collection?",
@@ -34,7 +34,7 @@ export const cardsFaqData = [
   },
   {
     id: nanoid(),
-    kind: "faq",
+    variant: "faq",
     url: card04,
     alt: "Card 4",
     subTitle: "What rights do i have as an owner\nof\n an nft?",

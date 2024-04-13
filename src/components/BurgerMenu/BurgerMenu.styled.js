@@ -13,8 +13,8 @@ export const Nav = styled.nav`
 
 export const List = styled.ul`
   display: flex;
-  flex-direction: ${(props) => (props.kind === "header" ? "row" : "column")};
+  flex-direction: ${(props) => (props.variant === "header" ? "row" : "column")};
   align-items: center;
   justify-content: center;
-  gap: ${(props) => (props.kind === "header" ? "0" : "27px")};
+  gap: ${(props) => (props.variant === "header" ? "0" : "27px")};
 `;
