@@ -7,14 +7,14 @@ const regx = {
 
 const userName = Yup.string()
   .transform((value) => value.trim())
-  .min(2, "Wrong discord")
-  .matches(regx.userName, "Wrong discord")
+  .min(2, "At least 2 characters")
+  .matches(regx.userName, "Starts with '@'")
   .required("Wrong discord");
 
 const walletAddress = Yup.string()
   .transform((value) => value.trim())
-  .length(19, "Wrong address")
-  .matches(regx.walletAddress, "Wrong address")
+  .length(19, "Exactly 19 characters")
+  .matches(regx.walletAddress, "Only letters and digits")
   .required("Wrong address");
 
 export const schemas = {
